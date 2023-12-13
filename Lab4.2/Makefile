@@ -35,7 +35,7 @@ OBJCOPY=$(TOOLROOT)/arm-none-eabi-objcopy
 # Code paths
 APP_CODE=$(APP)/Src
 
-# Search path for perpheral library
+# Search path for peripheral library
 
 VPATH=$(HAL)/Src:$(APP_CODE)
 
