@@ -11,7 +11,7 @@ stm32l4xx_hal_dma.o stm32l4xx_hal_uart.o stm32l4xx_hal_uart_ex.o
 
 # Tool path
 
-TOOLROOT		=/opt/gcc-arm-none-eabi/bin
+TOOLROOT		=/usr/bin
 
 # Library path
 
@@ -101,7 +101,6 @@ debug: $(ELF)
 # pull in dependencies
 
 -include $(OBJS:.o=.d)
-
 
 
 
