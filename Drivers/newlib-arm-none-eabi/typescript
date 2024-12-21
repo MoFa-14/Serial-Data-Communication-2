@@ -1,0 +1,3106 @@
+Script started on 2024-12-17 03:04:32-08:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="105" LINES="38"]
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ % make CFLAGS_FOR_TARGET="-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -
+> D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb
+> -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" CCASFLAGS="-march=armv7e-m+fp -
+> mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__"
+bash: fg: %: no such job
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ make CFLAGS_FOR_TARGET="-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" \
+> CCASFLAGS="-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__"
+make[1]: Entering directory '/home/student/ESP/newlib-arm-none-eabi'
+mkdir -p -- ./etc
+Configuring in ./etc
+configure: creating cache ./config.cache
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/etc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/etc'
+Checking multilib configuration for newlib...
+mkdir -p -- arm-none-eabi/newlib
+Configuring in arm-none-eabi/newlib
+configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... arm-none-eabi
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for arm-none-eabi-strip... arm-none-eabi-strip
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for style of include used by make... GNU
+checking for arm-none-eabi-gcc... arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    accepts -g... yes
+checking for arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    option to accept ISO C89... none needed
+checking whether arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    understands -c and -o together... yes
+checking dependency style of arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   ... gcc3
+checking how to run the C preprocessor... arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    -E
+checking dependency style of arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   ... gcc3
+checking for arm-none-eabi-ar... arm-none-eabi-ar
+checking the archiver (arm-none-eabi-ar) interface... ar
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... (cached) yes
+checking for arm-none-eabi-ranlib... arm-none-eabi-ranlib
+checking for arm-none-eabi-readelf... arm-none-eabi-readelf
+checking for long double... yes
+checking for XCHAL_HAVE_FP_SQRT... yes
+checking for build system executable suffix... no
+checking for .preinit_array/.init_array/.fini_array support... yes
+checking if arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    accepts -fno-tree-loop-distribute-patterns with __attribute__ ((__optimize__))... yes
+checking for long double... (cached) yes
+checking whether long double equals double... yes
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating newlib.h
+config.status: creating _newlib_version.h
+config.status: executing default-1 commands
+config.status: executing depfiles commands
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+make "CC_FOR_BUILD=gcc" "CFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "CCASFLAGS=-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "LIBCFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "MAKE=make" "MAKEINFO=/home/student/ESP/newlib-cygwin/missing makeinfo --split-size=5000000 --split-size=5000000 " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/home/student/ESP/newlib-arm-none-eabi" "infodir=/home/student/ESP/newlib-arm-none-eabi/share/info" "libdir=/home/student/ESP/newlib-arm-none-eabi/lib" "prefix=/home/student/ESP/newlib-arm-none-eabi" "tooldir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi" "top_toollibdir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/lib" "AR=arm-none-eabi-ar" "AS=arm-none-eabi-as" "CC=arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   " "LD=arm-none-eabi-ld" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "NM=arm-none-eabi-nm" "PICFLAG=" "RANLIB=arm-none-eabi-ranlib" "DESTDIR=" all-am
+make[3]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+  GEN      stmp-targ-include
+make[4]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+  GEN      targ-include
+  GEN      targ-include/_newlib_version.h
+  GEN      targ-include/newlib.h
+  GEN      targ-include/sys
+  GEN      targ-include/machine
+  GEN      targ-include/bits
+make[4]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+make[4]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+  GEN      targ-include/_newlib_version.h
+  GEN      targ-include/newlib.h
+make[4]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+  CC       libm/math/libm_a-k_standard.o
+  CC       libm/math/libm_a-k_rem_pio2.o
+  CC       libm/math/libm_a-k_cos.o
+  CC       libm/math/libm_a-k_sin.o
+  CC       libm/math/libm_a-k_tan.o
+  CC       libm/math/libm_a-e_acos.o
+  CC       libm/math/libm_a-e_acosh.o
+  CC       libm/math/libm_a-e_asin.o
+  CC       libm/math/libm_a-e_atan2.o
+  CC       libm/math/libm_a-e_atanh.o
+  CC       libm/math/libm_a-e_cosh.o
+  CC       libm/math/libm_a-e_exp.o
+  CC       libm/math/libm_a-e_fmod.o
+  CC       libm/math/libm_a-e_tgamma.o
+  CC       libm/math/libm_a-e_hypot.o
+  CC       libm/math/libm_a-e_j0.o
+  CC       libm/math/libm_a-e_j1.o
+  CC       libm/math/libm_a-e_jn.o
+  CC       libm/math/libm_a-er_lgamma.o
+  CC       libm/math/libm_a-e_log.o
+  CC       libm/math/libm_a-e_log10.o
+  CC       libm/math/libm_a-e_pow.o
+  CC       libm/math/libm_a-e_rem_pio2.o
+  CC       libm/math/libm_a-e_remainder.o
+  CC       libm/math/libm_a-e_scalb.o
+  CC       libm/math/libm_a-e_sinh.o
+  CC       libm/math/libm_a-e_sqrt.o
+  CC       libm/math/libm_a-w_acos.o
+  CC       libm/math/libm_a-w_acosh.o
+  CC       libm/math/libm_a-w_asin.o
+  CC       libm/math/libm_a-w_atan2.o
+  CC       libm/math/libm_a-w_atanh.o
+  CC       libm/math/libm_a-w_cosh.o
+  CC       libm/math/libm_a-w_exp.o
+  CC       libm/math/libm_a-w_fmod.o
+  CC       libm/math/libm_a-w_gamma.o
+  CC       libm/math/libm_a-wr_gamma.o
+  CC       libm/math/libm_a-w_hypot.o
+  CC       libm/math/libm_a-w_j0.o
+  CC       libm/math/libm_a-w_j1.o
+  CC       libm/math/libm_a-w_jn.o
+  CC       libm/math/libm_a-w_lgamma.o
+  CC       libm/math/libm_a-wr_lgamma.o
+  CC       libm/math/libm_a-w_log.o
+  CC       libm/math/libm_a-w_log10.o
+  CC       libm/math/libm_a-w_pow.o
+  CC       libm/math/libm_a-w_remainder.o
+  CC       libm/math/libm_a-w_scalb.o
+  CC       libm/math/libm_a-w_sinh.o
+  CC       libm/math/libm_a-w_sqrt.o
+  CC       libm/math/libm_a-w_sincos.o
+  CC       libm/math/libm_a-w_drem.o
+  CC       libm/math/libm_a-signgam.o
+  CC       libm/math/libm_a-s_asinh.o
+  CC       libm/math/libm_a-s_atan.o
+  CC       libm/math/libm_a-s_ceil.o
+  CC       libm/math/libm_a-s_cos.o
+  CC       libm/math/libm_a-s_erf.o
+  CC       libm/math/libm_a-s_fabs.o
+  CC       libm/math/libm_a-s_floor.o
+  CC       libm/math/libm_a-s_frexp.o
+  CC       libm/math/libm_a-s_ldexp.o
+  CC       libm/math/libm_a-s_signif.o
+  CC       libm/math/libm_a-s_sin.o
+  CC       libm/math/libm_a-s_tan.o
+  CC       libm/math/libm_a-s_tanh.o
+  CC       libm/math/libm_a-w_exp2.o
+  CC       libm/math/libm_a-w_tgamma.o
+  CC       libm/math/libm_a-kf_rem_pio2.o
+  CC       libm/math/libm_a-kf_cos.o
+  CC       libm/math/libm_a-kf_sin.o
+  CC       libm/math/libm_a-kf_tan.o
+  CC       libm/math/libm_a-ef_acos.o
+  CC       libm/math/libm_a-ef_acosh.o
+  CC       libm/math/libm_a-ef_asin.o
+  CC       libm/math/libm_a-ef_atan2.o
+  CC       libm/math/libm_a-ef_atanh.o
+  CC       libm/math/libm_a-ef_cosh.o
+  CC       libm/math/libm_a-ef_exp.o
+  CC       libm/math/libm_a-ef_fmod.o
+  CC       libm/math/libm_a-ef_tgamma.o
+  CC       libm/math/libm_a-ef_hypot.o
+  CC       libm/math/libm_a-ef_j0.o
+  CC       libm/math/libm_a-ef_j1.o
+  CC       libm/math/libm_a-ef_jn.o
+  CC       libm/math/libm_a-erf_lgamma.o
+  CC       libm/math/libm_a-ef_log.o
+  CC       libm/math/libm_a-ef_log10.o
+  CC       libm/math/libm_a-ef_pow.o
+  CC       libm/math/libm_a-ef_rem_pio2.o
+  CC       libm/math/libm_a-ef_remainder.o
+  CC       libm/math/libm_a-ef_scalb.o
+  CC       libm/math/libm_a-ef_sinh.o
+  CC       libm/math/libm_a-ef_sqrt.o
+  CC       libm/math/libm_a-wf_acos.o
+  CC       libm/math/libm_a-wf_acosh.o
+  CC       libm/math/libm_a-wf_asin.o
+  CC       libm/math/libm_a-wf_atan2.o
+  CC       libm/math/libm_a-wf_atanh.o
+  CC       libm/math/libm_a-wf_cosh.o
+  CC       libm/math/libm_a-wf_exp.o
+  CC       libm/math/libm_a-wf_fmod.o
+  CC       libm/math/libm_a-wf_gamma.o
+  CC       libm/math/libm_a-wrf_gamma.o
+  CC       libm/math/libm_a-wf_hypot.o
+  CC       libm/math/libm_a-wf_j0.o
+  CC       libm/math/libm_a-wf_j1.o
+  CC       libm/math/libm_a-wf_jn.o
+  CC       libm/math/libm_a-wf_lgamma.o
+  CC       libm/math/libm_a-wrf_lgamma.o
+  CC       libm/math/libm_a-wf_log.o
+  CC       libm/math/libm_a-wf_log10.o
+  CC       libm/math/libm_a-wf_pow.o
+  CC       libm/math/libm_a-wf_remainder.o
+  CC       libm/math/libm_a-wf_scalb.o
+  CC       libm/math/libm_a-wf_sinh.o
+  CC       libm/math/libm_a-wf_sqrt.o
+  CC       libm/math/libm_a-wf_sincos.o
+  CC       libm/math/libm_a-wf_drem.o
+  CC       libm/math/libm_a-sf_asinh.o
+  CC       libm/math/libm_a-sf_atan.o
+  CC       libm/math/libm_a-sf_ceil.o
+  CC       libm/math/libm_a-sf_cos.o
+  CC       libm/math/libm_a-sf_erf.o
+  CC       libm/math/libm_a-sf_fabs.o
+  CC       libm/math/libm_a-sf_floor.o
+  CC       libm/math/libm_a-sf_frexp.o
+  CC       libm/math/libm_a-sf_ldexp.o
+  CC       libm/math/libm_a-sf_signif.o
+  CC       libm/math/libm_a-sf_sin.o
+  CC       libm/math/libm_a-sf_tan.o
+  CC       libm/math/libm_a-sf_tanh.o
+  CC       libm/math/libm_a-wf_exp2.o
+  CC       libm/math/libm_a-wf_tgamma.o
+  CC       libm/math/libm_a-wf_log2.o
+  CC       libm/math/libm_a-el_hypot.o
+  CC       libm/common/libm_a-s_finite.o
+  CC       libm/common/libm_a-s_copysign.o
+  CC       libm/common/libm_a-s_modf.o
+  CC       libm/common/libm_a-s_scalbn.o
+  CC       libm/common/libm_a-s_cbrt.o
+  CC       libm/common/libm_a-s_exp10.o
+  CC       libm/common/libm_a-s_expm1.o
+  CC       libm/common/libm_a-s_ilogb.o
+  CC       libm/common/libm_a-s_infinity.o
+  CC       libm/common/libm_a-s_isinf.o
+  CC       libm/common/libm_a-s_isinfd.o
+  CC       libm/common/libm_a-s_isnan.o
+  CC       libm/common/libm_a-s_isnand.o
+  CC       libm/common/libm_a-s_log1p.o
+  CC       libm/common/libm_a-s_nan.o
+  CC       libm/common/libm_a-s_nextafter.o
+  CC       libm/common/libm_a-s_pow10.o
+  CC       libm/common/libm_a-s_rint.o
+  CC       libm/common/libm_a-s_logb.o
+  CC       libm/common/libm_a-s_log2.o
+  CC       libm/common/libm_a-s_fdim.o
+  CC       libm/common/libm_a-s_fma.o
+  CC       libm/common/libm_a-s_fmax.o
+  CC       libm/common/libm_a-s_fmin.o
+  CC       libm/common/libm_a-s_fpclassify.o
+  CC       libm/common/libm_a-s_lrint.o
+  CC       libm/common/libm_a-s_llrint.o
+  CC       libm/common/libm_a-s_lround.o
+  CC       libm/common/libm_a-s_llround.o
+  CC       libm/common/libm_a-s_nearbyint.o
+  CC       libm/common/libm_a-s_remquo.o
+  CC       libm/common/libm_a-s_round.o
+  CC       libm/common/libm_a-s_scalbln.o
+  CC       libm/common/libm_a-s_signbit.o
+  CC       libm/common/libm_a-s_trunc.o
+  CC       libm/common/libm_a-exp.o
+  CC       libm/common/libm_a-exp2.o
+  CC       libm/common/libm_a-exp_data.o
+  CC       libm/common/libm_a-math_err.o
+  CC       libm/common/libm_a-log.o
+  CC       libm/common/libm_a-log_data.o
+  CC       libm/common/libm_a-log2.o
+  CC       libm/common/libm_a-log2_data.o
+  CC       libm/common/libm_a-pow.o
+  CC       libm/common/libm_a-pow_log_data.o
+  CC       libm/common/libm_a-sf_finite.o
+  CC       libm/common/libm_a-sf_copysign.o
+  CC       libm/common/libm_a-sf_modf.o
+  CC       libm/common/libm_a-sf_scalbn.o
+  CC       libm/common/libm_a-sf_cbrt.o
+  CC       libm/common/libm_a-sf_exp10.o
+  CC       libm/common/libm_a-sf_expm1.o
+  CC       libm/common/libm_a-sf_ilogb.o
+  CC       libm/common/libm_a-sf_infinity.o
+  CC       libm/common/libm_a-sf_isinf.o
+  CC       libm/common/libm_a-sf_isinff.o
+  CC       libm/common/libm_a-sf_isnan.o
+  CC       libm/common/libm_a-sf_isnanf.o
+  CC       libm/common/libm_a-sf_log1p.o
+  CC       libm/common/libm_a-sf_nan.o
+  CC       libm/common/libm_a-sf_nextafter.o
+  CC       libm/common/libm_a-sf_pow10.o
+  CC       libm/common/libm_a-sf_rint.o
+  CC       libm/common/libm_a-sf_logb.o
+  CC       libm/common/libm_a-sf_fdim.o
+  CC       libm/common/libm_a-sf_fma.o
+  CC       libm/common/libm_a-sf_fmax.o
+  CC       libm/common/libm_a-sf_fmin.o
+  CC       libm/common/libm_a-sf_fpclassify.o
+  CC       libm/common/libm_a-sf_lrint.o
+  CC       libm/common/libm_a-sf_llrint.o
+  CC       libm/common/libm_a-sf_lround.o
+  CC       libm/common/libm_a-sf_llround.o
+  CC       libm/common/libm_a-sf_nearbyint.o
+  CC       libm/common/libm_a-sf_remquo.o
+  CC       libm/common/libm_a-sf_round.o
+  CC       libm/common/libm_a-sf_scalbln.o
+  CC       libm/common/libm_a-sf_trunc.o
+  CC       libm/common/libm_a-sf_exp.o
+  CC       libm/common/libm_a-sf_exp2.o
+  CC       libm/common/libm_a-sf_exp2_data.o
+  CC       libm/common/libm_a-sf_log.o
+  CC       libm/common/libm_a-sf_log_data.o
+  CC       libm/common/libm_a-sf_log2.o
+  CC       libm/common/libm_a-sf_log2_data.o
+  CC       libm/common/libm_a-sf_pow_log2_data.o
+  CC       libm/common/libm_a-sf_pow.o
+  CC       libm/common/libm_a-sinf.o
+  CC       libm/common/libm_a-cosf.o
+  CC       libm/common/libm_a-sincosf.o
+  CC       libm/common/libm_a-sincosf_data.o
+  CC       libm/common/libm_a-math_errf.o
+  CC       libm/common/libm_a-atanl.o
+  CC       libm/common/libm_a-cosl.o
+  CC       libm/common/libm_a-sinl.o
+  CC       libm/common/libm_a-tanl.o
+  CC       libm/common/libm_a-tanhl.o
+  CC       libm/common/libm_a-frexpl.o
+  CC       libm/common/libm_a-modfl.o
+  CC       libm/common/libm_a-ceill.o
+  CC       libm/common/libm_a-fabsl.o
+  CC       libm/common/libm_a-floorl.o
+  CC       libm/common/libm_a-log1pl.o
+  CC       libm/common/libm_a-expm1l.o
+  CC       libm/common/libm_a-acosl.o
+  CC       libm/common/libm_a-asinl.o
+  CC       libm/common/libm_a-atan2l.o
+  CC       libm/common/libm_a-coshl.o
+  CC       libm/common/libm_a-sinhl.o
+  CC       libm/common/libm_a-expl.o
+  CC       libm/common/libm_a-ldexpl.o
+  CC       libm/common/libm_a-logl.o
+  CC       libm/common/libm_a-log10l.o
+  CC       libm/common/libm_a-powl.o
+  CC       libm/common/libm_a-sqrtl.o
+  CC       libm/common/libm_a-fmodl.o
+  CC       libm/common/libm_a-hypotl.o
+  CC       libm/common/libm_a-copysignl.o
+  CC       libm/common/libm_a-nanl.o
+  CC       libm/common/libm_a-ilogbl.o
+  CC       libm/common/libm_a-asinhl.o
+  CC       libm/common/libm_a-cbrtl.o
+  CC       libm/common/libm_a-nextafterl.o
+  CC       libm/common/libm_a-rintl.o
+  CC       libm/common/libm_a-scalbnl.o
+  CC       libm/common/libm_a-exp2l.o
+  CC       libm/common/libm_a-scalblnl.o
+  CC       libm/common/libm_a-tgammal.o
+  CC       libm/common/libm_a-nearbyintl.o
+  CC       libm/common/libm_a-lrintl.o
+  CC       libm/common/libm_a-llrintl.o
+  CC       libm/common/libm_a-roundl.o
+  CC       libm/common/libm_a-lroundl.o
+  CC       libm/common/libm_a-llroundl.o
+  CC       libm/common/libm_a-truncl.o
+  CC       libm/common/libm_a-remquol.o
+  CC       libm/common/libm_a-fdiml.o
+  CC       libm/common/libm_a-fmaxl.o
+  CC       libm/common/libm_a-fminl.o
+  CC       libm/common/libm_a-fmal.o
+  CC       libm/common/libm_a-acoshl.o
+  CC       libm/common/libm_a-atanhl.o
+  CC       libm/common/libm_a-remainderl.o
+  CC       libm/common/libm_a-lgammal.o
+  CC       libm/common/libm_a-erfl.o
+  CC       libm/common/libm_a-erfcl.o
+  CC       libm/common/libm_a-logbl.o
+  CC       libm/common/libm_a-nexttowardf.o
+  CC       libm/common/libm_a-nexttoward.o
+  CC       libm/common/libm_a-nexttowardl.o
+  CC       libm/common/libm_a-log2l.o
+  CC       libm/common/libm_a-sl_finite.o
+  CC       libm/complex/libm_a-cabs.o
+  CC       libm/complex/libm_a-cacos.o
+  CC       libm/complex/libm_a-cacosh.o
+  CC       libm/complex/libm_a-carg.o
+  CC       libm/complex/libm_a-casin.o
+  CC       libm/complex/libm_a-casinh.o
+  CC       libm/complex/libm_a-catan.o
+  CC       libm/complex/libm_a-catanh.o
+  CC       libm/complex/libm_a-ccos.o
+  CC       libm/complex/libm_a-ccosh.o
+  CC       libm/complex/libm_a-cephes_subr.o
+  CC       libm/complex/libm_a-cexp.o
+  CC       libm/complex/libm_a-cimag.o
+  CC       libm/complex/libm_a-clog.o
+  CC       libm/complex/libm_a-clog10.o
+  CC       libm/complex/libm_a-conj.o
+  CC       libm/complex/libm_a-cpow.o
+  CC       libm/complex/libm_a-cproj.o
+  CC       libm/complex/libm_a-creal.o
+  CC       libm/complex/libm_a-csin.o
+  CC       libm/complex/libm_a-csinh.o
+  CC       libm/complex/libm_a-csqrt.o
+  CC       libm/complex/libm_a-ctan.o
+  CC       libm/complex/libm_a-ctanh.o
+  CC       libm/complex/libm_a-cabsf.o
+  CC       libm/complex/libm_a-casinf.o
+  CC       libm/complex/libm_a-ccosf.o
+  CC       libm/complex/libm_a-cimagf.o
+  CC       libm/complex/libm_a-cprojf.o
+  CC       libm/complex/libm_a-csqrtf.o
+  CC       libm/complex/libm_a-cacosf.o
+  CC       libm/complex/libm_a-casinhf.o
+  CC       libm/complex/libm_a-ccoshf.o
+  CC       libm/complex/libm_a-clogf.o
+  CC       libm/complex/libm_a-clog10f.o
+  CC       libm/complex/libm_a-crealf.o
+  CC       libm/complex/libm_a-ctanf.o
+  CC       libm/complex/libm_a-cacoshf.o
+  CC       libm/complex/libm_a-catanf.o
+  CC       libm/complex/libm_a-cephes_subrf.o
+  CC       libm/complex/libm_a-conjf.o
+  CC       libm/complex/libm_a-csinf.o
+  CC       libm/complex/libm_a-ctanhf.o
+  CC       libm/complex/libm_a-cargf.o
+  CC       libm/complex/libm_a-catanhf.o
+  CC       libm/complex/libm_a-cexpf.o
+  CC       libm/complex/libm_a-cpowf.o
+  CC       libm/complex/libm_a-csinhf.o
+  CC       libm/complex/libm_a-cabsl.o
+  CC       libm/complex/libm_a-creall.o
+  CC       libm/complex/libm_a-cimagl.o
+  CC       libm/complex/libm_a-ccoshl.o
+  CC       libm/complex/libm_a-cacoshl.o
+  CC       libm/complex/libm_a-clogl.o
+  CC       libm/complex/libm_a-csqrtl.o
+  CC       libm/complex/libm_a-cargl.o
+  CC       libm/complex/libm_a-cprojl.o
+  CC       libm/complex/libm_a-cexpl.o
+  CC       libm/complex/libm_a-cephes_subrl.o
+  CC       libm/complex/libm_a-cacosl.o
+  CC       libm/complex/libm_a-ccosl.o
+  CC       libm/complex/libm_a-casinl.o
+  CC       libm/complex/libm_a-catanhl.o
+  CC       libm/complex/libm_a-conjl.o
+  CC       libm/complex/libm_a-cpowl.o
+  CC       libm/complex/libm_a-ctanhl.o
+  CC       libm/complex/libm_a-ctanl.o
+  CC       libm/complex/libm_a-casinhl.o
+  CC       libm/complex/libm_a-csinhl.o
+  CC       libm/complex/libm_a-csinl.o
+  CC       libm/complex/libm_a-catanl.o
+  CC       libm/fenv/libm_a-feclearexcept.o
+  CC       libm/fenv/libm_a-fe_dfl_env.o
+  CC       libm/fenv/libm_a-fegetenv.o
+  CC       libm/fenv/libm_a-fegetexceptflag.o
+  CC       libm/fenv/libm_a-fegetround.o
+  CC       libm/fenv/libm_a-feholdexcept.o
+  CC       libm/fenv/libm_a-feraiseexcept.o
+  CC       libm/fenv/libm_a-fesetenv.o
+  CC       libm/fenv/libm_a-fesetexceptflag.o
+  CC       libm/fenv/libm_a-fesetround.o
+  CC       libm/fenv/libm_a-fetestexcept.o
+  CC       libm/fenv/libm_a-feupdateenv.o
+  CC       libm/machine/arm/libm_a-e_sqrt.o
+  CC       libm/machine/arm/libm_a-ef_sqrt.o
+  CC       libm/machine/arm/libm_a-s_ceil.o
+  CC       libm/machine/arm/libm_a-s_floor.o
+  CC       libm/machine/arm/libm_a-s_fma_arm.o
+  CC       libm/machine/arm/libm_a-s_nearbyint.o
+  CC       libm/machine/arm/libm_a-s_rint.o
+  CC       libm/machine/arm/libm_a-s_round.o
+  CC       libm/machine/arm/libm_a-s_trunc.o
+  CC       libm/machine/arm/libm_a-sf_ceil.o
+  CC       libm/machine/arm/libm_a-sf_floor.o
+  CC       libm/machine/arm/libm_a-sf_fma_arm.o
+  CC       libm/machine/arm/libm_a-sf_nearbyint.o
+  CC       libm/machine/arm/libm_a-sf_rint.o
+  CC       libm/machine/arm/libm_a-sf_round.o
+  CC       libm/machine/arm/libm_a-sf_trunc.o
+  CC       libm/machine/arm/libm_a-feclearexcept.o
+  CC       libm/machine/arm/libm_a-fe_dfl_env.o
+  CC       libm/machine/arm/libm_a-fegetenv.o
+  CC       libm/machine/arm/libm_a-fegetexceptflag.o
+  CC       libm/machine/arm/libm_a-fegetround.o
+  CC       libm/machine/arm/libm_a-feholdexcept.o
+  CC       libm/machine/arm/libm_a-fegetexcept.o
+  CC       libm/machine/arm/libm_a-feraiseexcept.o
+  CC       libm/machine/arm/libm_a-fesetenv.o
+  CC       libm/machine/arm/libm_a-fesetexceptflag.o
+  CC       libm/machine/arm/libm_a-fesetround.o
+  CC       libm/machine/arm/libm_a-fetestexcept.o
+  CC       libm/machine/arm/libm_a-feupdateenv.o
+  CC       libm/machine/arm/libm_a-feenableexcept.o
+  CC       libm/machine/arm/libm_a-fedisableexcept.o
+  AR       libm.a
+  CC       libc/argz/libc_a-argz_add.o
+  CC       libc/argz/libc_a-argz_add_sep.o
+  CC       libc/argz/libc_a-argz_append.o
+  CC       libc/argz/libc_a-argz_count.o
+  CC       libc/argz/libc_a-argz_create.o
+  CC       libc/argz/libc_a-argz_create_sep.o
+  CC       libc/argz/libc_a-argz_delete.o
+  CC       libc/argz/libc_a-argz_extract.o
+  CC       libc/argz/libc_a-argz_insert.o
+  CC       libc/argz/libc_a-argz_next.o
+  CC       libc/argz/libc_a-argz_replace.o
+  CC       libc/argz/libc_a-argz_stringify.o
+  CC       libc/argz/libc_a-buf_findstr.o
+  CC       libc/argz/libc_a-envz_entry.o
+  CC       libc/argz/libc_a-envz_get.o
+  CC       libc/argz/libc_a-envz_add.o
+  CC       libc/argz/libc_a-envz_remove.o
+  CC       libc/argz/libc_a-envz_merge.o
+  CC       libc/argz/libc_a-envz_strip.o
+  CC       libc/stdlib/libc_a-__adjust.o
+  CC       libc/stdlib/libc_a-__atexit.o
+  CC       libc/stdlib/libc_a-__call_atexit.o
+  CC       libc/stdlib/libc_a-__exp10.o
+  CC       libc/stdlib/libc_a-__ten_mu.o
+  CC       libc/stdlib/libc_a-_Exit.o
+  CC       libc/stdlib/libc_a-abort.o
+  CC       libc/stdlib/libc_a-abs.o
+  CC       libc/stdlib/libc_a-aligned_alloc.o
+  CC       libc/stdlib/libc_a-assert.o
+  CC       libc/stdlib/libc_a-atexit.o
+  CC       libc/stdlib/libc_a-atof.o
+  CC       libc/stdlib/libc_a-atoff.o
+  CC       libc/stdlib/libc_a-atoi.o
+  CC       libc/stdlib/libc_a-atol.o
+  CC       libc/stdlib/libc_a-calloc.o
+  CC       libc/stdlib/libc_a-callocr.o
+  CC       libc/stdlib/libc_a-cfreer.o
+  CC       libc/stdlib/libc_a-div.o
+  CC       libc/stdlib/libc_a-dtoa.o
+  CC       libc/stdlib/libc_a-dtoastub.o
+  CC       libc/stdlib/libc_a-environ.o
+  CC       libc/stdlib/libc_a-envlock.o
+  CC       libc/stdlib/libc_a-eprintf.o
+  CC       libc/stdlib/libc_a-exit.o
+  CC       libc/stdlib/libc_a-freer.o
+  CC       libc/stdlib/libc_a-gdtoa-gethex.o
+  CC       libc/stdlib/libc_a-gdtoa-hexnan.o
+  CC       libc/stdlib/libc_a-getenv.o
+  CC       libc/stdlib/libc_a-getenv_r.o
+  CC       libc/stdlib/libc_a-imaxabs.o
+  CC       libc/stdlib/libc_a-imaxdiv.o
+  CC       libc/stdlib/libc_a-itoa.o
+  CC       libc/stdlib/libc_a-labs.o
+  CC       libc/stdlib/libc_a-ldiv.o
+  CC       libc/stdlib/libc_a-ldtoa.o
+  CC       libc/stdlib/libc_a-gdtoa-ldtoa.o
+  CC       libc/stdlib/libc_a-gdtoa-gdtoa.o
+  CC       libc/stdlib/libc_a-gdtoa-dmisc.o
+  CC       libc/stdlib/libc_a-gdtoa-gmisc.o
+  CC       libc/stdlib/libc_a-mallinfor.o
+  CC       libc/stdlib/libc_a-malloc.o
+  CC       libc/stdlib/libc_a-mallocr.o
+  CC       libc/stdlib/libc_a-mallstatsr.o
+  CC       libc/stdlib/libc_a-mblen.o
+  CC       libc/stdlib/libc_a-mblen_r.o
+  CC       libc/stdlib/libc_a-mbstowcs.o
+  CC       libc/stdlib/libc_a-mbstowcs_r.o
+  CC       libc/stdlib/libc_a-mbtowc.o
+  CC       libc/stdlib/libc_a-mbtowc_r.o
+  CC       libc/stdlib/libc_a-mlock.o
+  CC       libc/stdlib/libc_a-mprec.o
+  CC       libc/stdlib/libc_a-msizer.o
+  CC       libc/stdlib/libc_a-mstats.o
+  CC       libc/stdlib/libc_a-on_exit_args.o
+  CC       libc/stdlib/libc_a-quick_exit.o
+  CC       libc/stdlib/libc_a-rand.o
+  CC       libc/stdlib/libc_a-rand_r.o
+  CC       libc/stdlib/libc_a-random.o
+  CC       libc/stdlib/libc_a-realloc.o
+  CC       libc/stdlib/libc_a-reallocarray.o
+  CC       libc/stdlib/libc_a-reallocf.o
+  CC       libc/stdlib/libc_a-reallocr.o
+  CC       libc/stdlib/libc_a-sb_charsets.o
+  CC       libc/stdlib/libc_a-strtod.o
+  CC       libc/stdlib/libc_a-strtoimax.o
+  CC       libc/stdlib/libc_a-strtol.o
+  CC       libc/stdlib/libc_a-strtoul.o
+  CC       libc/stdlib/libc_a-strtoumax.o
+  CC       libc/stdlib/libc_a-utoa.o
+  CC       libc/stdlib/libc_a-wcstod.o
+  CC       libc/stdlib/libc_a-wcstoimax.o
+  CC       libc/stdlib/libc_a-wcstol.o
+  CC       libc/stdlib/libc_a-wcstoul.o
+  CC       libc/stdlib/libc_a-wcstoumax.o
+  CC       libc/stdlib/libc_a-wcstombs.o
+  CC       libc/stdlib/libc_a-wcstombs_r.o
+  CC       libc/stdlib/libc_a-wctomb.o
+  CC       libc/stdlib/libc_a-wctomb_r.o
+  CC       libc/stdlib/libc_a-strtodg.o
+  CC       libc/stdlib/libc_a-strtold.o
+  CC       libc/stdlib/libc_a-strtorx.o
+  CC       libc/stdlib/libc_a-wcstold.o
+  CC       libc/stdlib/libc_a-arc4random.o
+  CC       libc/stdlib/libc_a-arc4random_uniform.o
+  CC       libc/stdlib/libc_a-cxa_atexit.o
+  CC       libc/stdlib/libc_a-cxa_finalize.o
+  CC       libc/stdlib/libc_a-drand48.o
+  CC       libc/stdlib/libc_a-ecvtbuf.o
+  CC       libc/stdlib/libc_a-efgcvt.o
+  CC       libc/stdlib/libc_a-erand48.o
+  CC       libc/stdlib/libc_a-jrand48.o
+  CC       libc/stdlib/libc_a-lcong48.o
+  CC       libc/stdlib/libc_a-lrand48.o
+  CC       libc/stdlib/libc_a-mrand48.o
+  CC       libc/stdlib/libc_a-msize.o
+  CC       libc/stdlib/libc_a-mtrim.o
+  CC       libc/stdlib/libc_a-nrand48.o
+  CC       libc/stdlib/libc_a-rand48.o
+  CC       libc/stdlib/libc_a-seed48.o
+  CC       libc/stdlib/libc_a-srand48.o
+  CC       libc/stdlib/libc_a-strtoll.o
+  CC       libc/stdlib/libc_a-strtoll_r.o
+  CC       libc/stdlib/libc_a-strtoull.o
+  CC       libc/stdlib/libc_a-strtoull_r.o
+  CC       libc/stdlib/libc_a-wcstoll.o
+  CC       libc/stdlib/libc_a-wcstoll_r.o
+  CC       libc/stdlib/libc_a-wcstoull.o
+  CC       libc/stdlib/libc_a-wcstoull_r.o
+  CC       libc/stdlib/libc_a-atoll.o
+  CC       libc/stdlib/libc_a-llabs.o
+  CC       libc/stdlib/libc_a-lldiv.o
+  CC       libc/stdlib/libc_a-a64l.o
+  CC       libc/stdlib/libc_a-btowc.o
+  CC       libc/stdlib/libc_a-getopt.o
+  CC       libc/stdlib/libc_a-getsubopt.o
+  CC       libc/stdlib/libc_a-l64a.o
+  CC       libc/stdlib/libc_a-malign.o
+  CC       libc/stdlib/libc_a-malignr.o
+  CC       libc/stdlib/libc_a-malloptr.o
+  CC       libc/stdlib/libc_a-mbrlen.o
+  CC       libc/stdlib/libc_a-mbrtowc.o
+  CC       libc/stdlib/libc_a-mbsinit.o
+  CC       libc/stdlib/libc_a-mbsnrtowcs.o
+  CC       libc/stdlib/libc_a-mbsrtowcs.o
+  CC       libc/stdlib/libc_a-on_exit.o
+  CC       libc/stdlib/libc_a-pvallocr.o
+  CC       libc/stdlib/libc_a-valloc.o
+  CC       libc/stdlib/libc_a-vallocr.o
+  CC       libc/stdlib/libc_a-wcrtomb.o
+  CC       libc/stdlib/libc_a-wcsnrtombs.o
+  CC       libc/stdlib/libc_a-wcsrtombs.o
+  CC       libc/stdlib/libc_a-wctob.o
+  CC       libc/stdlib/libc_a-putenv.o
+  CC       libc/stdlib/libc_a-putenv_r.o
+  CC       libc/stdlib/libc_a-setenv.o
+  CC       libc/stdlib/libc_a-setenv_r.o
+  CC       libc/stdlib/libc_a-rpmatch.o
+  CC       libc/stdlib/libc_a-system.o
+  CC       libc/ctype/libc_a-ctype_.o
+  CC       libc/ctype/libc_a-isalnum.o
+  CC       libc/ctype/libc_a-isalpha.o
+  CC       libc/ctype/libc_a-iscntrl.o
+  CC       libc/ctype/libc_a-isdigit.o
+  CC       libc/ctype/libc_a-islower.o
+  CC       libc/ctype/libc_a-isupper.o
+  CC       libc/ctype/libc_a-isprint.o
+  CC       libc/ctype/libc_a-ispunct.o
+  CC       libc/ctype/libc_a-isspace.o
+  CC       libc/ctype/libc_a-isxdigit.o
+  CC       libc/ctype/libc_a-tolower.o
+  CC       libc/ctype/libc_a-toupper.o
+  CC       libc/ctype/libc_a-categories.o
+  CC       libc/ctype/libc_a-isalnum_l.o
+  CC       libc/ctype/libc_a-isalpha_l.o
+  CC       libc/ctype/libc_a-isascii.o
+  CC       libc/ctype/libc_a-isascii_l.o
+  CC       libc/ctype/libc_a-isblank.o
+  CC       libc/ctype/libc_a-isblank_l.o
+  CC       libc/ctype/libc_a-iscntrl_l.o
+  CC       libc/ctype/libc_a-isdigit_l.o
+  CC       libc/ctype/libc_a-islower_l.o
+  CC       libc/ctype/libc_a-isupper_l.o
+  CC       libc/ctype/libc_a-isprint_l.o
+  CC       libc/ctype/libc_a-ispunct_l.o
+  CC       libc/ctype/libc_a-isspace_l.o
+  CC       libc/ctype/libc_a-iswalnum.o
+  CC       libc/ctype/libc_a-iswalnum_l.o
+  CC       libc/ctype/libc_a-iswalpha.o
+  CC       libc/ctype/libc_a-iswalpha_l.o
+  CC       libc/ctype/libc_a-iswblank.o
+  CC       libc/ctype/libc_a-iswblank_l.o
+  CC       libc/ctype/libc_a-iswcntrl.o
+  CC       libc/ctype/libc_a-iswcntrl_l.o
+  CC       libc/ctype/libc_a-iswctype.o
+  CC       libc/ctype/libc_a-iswctype_l.o
+  CC       libc/ctype/libc_a-iswdigit.o
+  CC       libc/ctype/libc_a-iswdigit_l.o
+  CC       libc/ctype/libc_a-iswgraph.o
+  CC       libc/ctype/libc_a-iswgraph_l.o
+  CC       libc/ctype/libc_a-iswlower.o
+  CC       libc/ctype/libc_a-iswlower_l.o
+  CC       libc/ctype/libc_a-iswprint.o
+  CC       libc/ctype/libc_a-iswprint_l.o
+  CC       libc/ctype/libc_a-iswpunct.o
+  CC       libc/ctype/libc_a-iswpunct_l.o
+  CC       libc/ctype/libc_a-iswspace.o
+  CC       libc/ctype/libc_a-iswspace_l.o
+  CC       libc/ctype/libc_a-iswupper.o
+  CC       libc/ctype/libc_a-iswupper_l.o
+  CC       libc/ctype/libc_a-iswxdigit.o
+  CC       libc/ctype/libc_a-iswxdigit_l.o
+  CC       libc/ctype/libc_a-isxdigit_l.o
+  CC       libc/ctype/libc_a-jp2uc.o
+  CC       libc/ctype/libc_a-toascii.o
+  CC       libc/ctype/libc_a-toascii_l.o
+  CC       libc/ctype/libc_a-tolower_l.o
+  CC       libc/ctype/libc_a-toupper_l.o
+  CC       libc/ctype/libc_a-towctrans.o
+  CC       libc/ctype/libc_a-towctrans_l.o
+  CC       libc/ctype/libc_a-towlower.o
+  CC       libc/ctype/libc_a-towlower_l.o
+  CC       libc/ctype/libc_a-towupper.o
+  CC       libc/ctype/libc_a-towupper_l.o
+  CC       libc/ctype/libc_a-wctrans.o
+  CC       libc/ctype/libc_a-wctrans_l.o
+  CC       libc/ctype/libc_a-wctype.o
+  CC       libc/ctype/libc_a-wctype_l.o
+  CC       libc/search/libc_a-bsearch.o
+  CC       libc/search/libc_a-ndbm.o
+  CC       libc/search/libc_a-qsort.o
+  CC       libc/search/libc_a-hash.o
+  CC       libc/search/libc_a-hash_bigkey.o
+  CC       libc/search/libc_a-hash_buf.o
+  CC       libc/search/libc_a-hash_func.o
+  CC       libc/search/libc_a-hash_log2.o
+  CC       libc/search/libc_a-hash_page.o
+  CC       libc/search/libc_a-hcreate.o
+  CC       libc/search/libc_a-hcreate_r.o
+  CC       libc/search/libc_a-tdelete.o
+  CC       libc/search/libc_a-tdestroy.o
+  CC       libc/search/libc_a-tfind.o
+  CC       libc/search/libc_a-tsearch.o
+  CC       libc/search/libc_a-twalk.o
+  CC       libc/search/libc_a-bsd_qsort_r.o
+  CC       libc/search/libc_a-qsort_r.o
+  CC       libc/stdio/libc_a-fiprintf.o
+  CC       libc/stdio/libc_a-fiscanf.o
+  CC       libc/stdio/libc_a-iprintf.o
+  CC       libc/stdio/libc_a-iscanf.o
+  CC       libc/stdio/libc_a-siprintf.o
+  CC       libc/stdio/libc_a-siscanf.o
+  CC       libc/stdio/libc_a-sniprintf.o
+  CC       libc/stdio/libc_a-svfiprintf.o
+  CC       libc/stdio/libc_a-svfiscanf.o
+  CC       libc/stdio/libc_a-svfprintf.o
+  CC       libc/stdio/libc_a-svfscanf.o
+  CC       libc/stdio/libc_a-vdiprintf.o
+  CC       libc/stdio/libc_a-vfprintf.o
+  CC       libc/stdio/libc_a-vfiprintf.o
+  CC       libc/stdio/libc_a-vfiscanf.o
+  CC       libc/stdio/libc_a-vfscanf.o
+  CC       libc/stdio/libc_a-vfwprintf.o
+  CC       libc/stdio/libc_a-viprintf.o
+  CC       libc/stdio/libc_a-viscanf.o
+  CC       libc/stdio/libc_a-vsiprintf.o
+  CC       libc/stdio/libc_a-vsiscanf.o
+  CC       libc/stdio/libc_a-vsniprintf.o
+  CC       libc/stdio/libc_a-sfputs_r.o
+  CC       libc/stdio/libc_a-sfputws_r.o
+  CC       libc/stdio/libc_a-sprint_r.o
+  CC       libc/stdio/libc_a-swprint_r.o
+  CC       libc/stdio/libc_a-ssputs_r.o
+  CC       libc/stdio/libc_a-ssputws_r.o
+  CC       libc/stdio/libc_a-ssprint_r.o
+  CC       libc/stdio/libc_a-sswprint_r.o
+  CC       libc/stdio/libc_a-svfiwprintf.o
+  CC       libc/stdio/libc_a-svfiwscanf.o
+  CC       libc/stdio/libc_a-svfwprintf.o
+  CC       libc/stdio/libc_a-svfwscanf.o
+  CC       libc/stdio/libc_a-vfiwprintf.o
+  CC       libc/stdio/libc_a-vfiwscanf.o
+  CC       libc/stdio/libc_a-vfwscanf.o
+  CC       libc/stdio/libc_a-clearerr.o
+  CC       libc/stdio/libc_a-fclose.o
+  CC       libc/stdio/libc_a-fdopen.o
+  CC       libc/stdio/libc_a-feof.o
+  CC       libc/stdio/libc_a-ferror.o
+  CC       libc/stdio/libc_a-fflush.o
+  CC       libc/stdio/libc_a-fgetc.o
+  CC       libc/stdio/libc_a-fgetpos.o
+  CC       libc/stdio/libc_a-fgets.o
+  CC       libc/stdio/libc_a-fileno.o
+  CC       libc/stdio/libc_a-findfp.o
+  CC       libc/stdio/libc_a-flags.o
+  CC       libc/stdio/libc_a-fopen.o
+  CC       libc/stdio/libc_a-fprintf.o
+  CC       libc/stdio/libc_a-fputc.o
+  CC       libc/stdio/libc_a-fputs.o
+  CC       libc/stdio/libc_a-fread.o
+  CC       libc/stdio/libc_a-freopen.o
+  CC       libc/stdio/libc_a-fscanf.o
+  CC       libc/stdio/libc_a-fseek.o
+  CC       libc/stdio/libc_a-fsetpos.o
+  CC       libc/stdio/libc_a-ftell.o
+  CC       libc/stdio/libc_a-fvwrite.o
+  CC       libc/stdio/libc_a-fwalk.o
+  CC       libc/stdio/libc_a-fwrite.o
+  CC       libc/stdio/libc_a-getc.o
+  CC       libc/stdio/libc_a-getchar.o
+  CC       libc/stdio/libc_a-getc_u.o
+  CC       libc/stdio/libc_a-getchar_u.o
+  CC       libc/stdio/libc_a-getdelim.o
+  CC       libc/stdio/libc_a-getline.o
+  CC       libc/stdio/libc_a-gets.o
+  CC       libc/stdio/libc_a-makebuf.o
+  CC       libc/stdio/libc_a-perror.o
+  CC       libc/stdio/libc_a-printf.o
+  CC       libc/stdio/libc_a-putc.o
+  CC       libc/stdio/libc_a-putchar.o
+  CC       libc/stdio/libc_a-putc_u.o
+  CC       libc/stdio/libc_a-putchar_u.o
+  CC       libc/stdio/libc_a-puts.o
+  CC       libc/stdio/libc_a-refill.o
+  CC       libc/stdio/libc_a-remove.o
+  CC       libc/stdio/libc_a-rename.o
+  CC       libc/stdio/libc_a-rewind.o
+  CC       libc/stdio/libc_a-rget.o
+  CC       libc/stdio/libc_a-scanf.o
+  CC       libc/stdio/libc_a-sccl.o
+  CC       libc/stdio/libc_a-setbuf.o
+  CC       libc/stdio/libc_a-setbuffer.o
+  CC       libc/stdio/libc_a-setlinebuf.o
+  CC       libc/stdio/libc_a-setvbuf.o
+  CC       libc/stdio/libc_a-snprintf.o
+  CC       libc/stdio/libc_a-sprintf.o
+  CC       libc/stdio/libc_a-sscanf.o
+  CC       libc/stdio/libc_a-stdio.o
+  CC       libc/stdio/libc_a-tmpfile.o
+  CC       libc/stdio/libc_a-tmpnam.o
+  CC       libc/stdio/libc_a-ungetc.o
+  CC       libc/stdio/libc_a-vdprintf.o
+  CC       libc/stdio/libc_a-vprintf.o
+  CC       libc/stdio/libc_a-vscanf.o
+  CC       libc/stdio/libc_a-vsnprintf.o
+  CC       libc/stdio/libc_a-vsprintf.o
+  CC       libc/stdio/libc_a-vsscanf.o
+  CC       libc/stdio/libc_a-wbuf.o
+  CC       libc/stdio/libc_a-wbufw.o
+  CC       libc/stdio/libc_a-wsetup.o
+  CC       libc/stdio/libc_a-asprintf.o
+  CC       libc/stdio/libc_a-fcloseall.o
+  CC       libc/stdio/libc_a-fseeko.o
+  CC       libc/stdio/libc_a-ftello.o
+  CC       libc/stdio/libc_a-mktemp.o
+  CC       libc/stdio/libc_a-vasprintf.o
+  CC       libc/stdio/libc_a-asiprintf.o
+  CC       libc/stdio/libc_a-getw.o
+  CC       libc/stdio/libc_a-putw.o
+  CC       libc/stdio/libc_a-vasiprintf.o
+  CC       libc/stdio/libc_a-asnprintf.o
+  CC       libc/stdio/libc_a-clearerr_u.o
+  CC       libc/stdio/libc_a-dprintf.o
+  CC       libc/stdio/libc_a-feof_u.o
+  CC       libc/stdio/libc_a-ferror_u.o
+  CC       libc/stdio/libc_a-fflush_u.o
+  CC       libc/stdio/libc_a-fgetc_u.o
+  CC       libc/stdio/libc_a-fgets_u.o
+  CC       libc/stdio/libc_a-fileno_u.o
+  CC       libc/stdio/libc_a-fmemopen.o
+  CC       libc/stdio/libc_a-fopencookie.o
+  CC       libc/stdio/libc_a-fpurge.o
+  CC       libc/stdio/libc_a-fputc_u.o
+  CC       libc/stdio/libc_a-fputs_u.o
+  CC       libc/stdio/libc_a-fread_u.o
+  CC       libc/stdio/libc_a-fsetlocking.o
+  CC       libc/stdio/libc_a-funopen.o
+  CC       libc/stdio/libc_a-fwrite_u.o
+  CC       libc/stdio/libc_a-open_memstream.o
+  CC       libc/stdio/libc_a-stdio_ext.o
+  CC       libc/stdio/libc_a-vasnprintf.o
+  CC       libc/stdio/libc_a-asniprintf.o
+  CC       libc/stdio/libc_a-diprintf.o
+  CC       libc/stdio/libc_a-fgetwc.o
+  CC       libc/stdio/libc_a-fgetwc_u.o
+  CC       libc/stdio/libc_a-fgetws.o
+  CC       libc/stdio/libc_a-fgetws_u.o
+  CC       libc/stdio/libc_a-fputwc.o
+  CC       libc/stdio/libc_a-fputwc_u.o
+  CC       libc/stdio/libc_a-fputws.o
+  CC       libc/stdio/libc_a-fputws_u.o
+  CC       libc/stdio/libc_a-fwide.o
+  CC       libc/stdio/libc_a-fwprintf.o
+  CC       libc/stdio/libc_a-fwscanf.o
+  CC       libc/stdio/libc_a-getwc.o
+  CC       libc/stdio/libc_a-getwc_u.o
+  CC       libc/stdio/libc_a-getwchar.o
+  CC       libc/stdio/libc_a-getwchar_u.o
+  CC       libc/stdio/libc_a-putwc.o
+  CC       libc/stdio/libc_a-putwc_u.o
+  CC       libc/stdio/libc_a-putwchar.o
+  CC       libc/stdio/libc_a-putwchar_u.o
+  CC       libc/stdio/libc_a-swprintf.o
+  CC       libc/stdio/libc_a-swscanf.o
+  CC       libc/stdio/libc_a-ungetwc.o
+  CC       libc/stdio/libc_a-vasniprintf.o
+  CC       libc/stdio/libc_a-vswprintf.o
+  CC       libc/stdio/libc_a-vswscanf.o
+  CC       libc/stdio/libc_a-vwprintf.o
+  CC       libc/stdio/libc_a-vwscanf.o
+  CC       libc/stdio/libc_a-wprintf.o
+  CC       libc/stdio/libc_a-wscanf.o
+  CC       libc/string/libc_a-bcopy.o
+  CC       libc/string/libc_a-bzero.o
+  CC       libc/string/libc_a-explicit_bzero.o
+  CC       libc/string/libc_a-ffsl.o
+  CC       libc/string/libc_a-ffsll.o
+  CC       libc/string/libc_a-fls.o
+  CC       libc/string/libc_a-flsl.o
+  CC       libc/string/libc_a-flsll.o
+  CC       libc/string/libc_a-index.o
+  CC       libc/string/libc_a-memchr.o
+  CC       libc/string/libc_a-memcmp.o
+  CC       libc/string/libc_a-memcpy.o
+  CC       libc/string/libc_a-memmove.o
+  CC       libc/string/libc_a-memset.o
+  CC       libc/string/libc_a-rindex.o
+  CC       libc/string/libc_a-strcasecmp.o
+  CC       libc/string/libc_a-strcat.o
+  CC       libc/string/libc_a-strchr.o
+  CC       libc/string/libc_a-strcmp.o
+  CC       libc/string/libc_a-strcoll.o
+  CC       libc/string/libc_a-strcpy.o
+  CC       libc/string/libc_a-strcspn.o
+  CC       libc/string/libc_a-strdup.o
+  CC       libc/string/libc_a-strdup_r.o
+  CC       libc/string/libc_a-strerror.o
+  CC       libc/string/libc_a-strerror_r.o
+  CC       libc/string/libc_a-strlcat.o
+  CC       libc/string/libc_a-strlcpy.o
+  CC       libc/string/libc_a-strlen.o
+  CC       libc/string/libc_a-strlwr.o
+  CC       libc/string/libc_a-strncasecmp.o
+  CC       libc/string/libc_a-strncat.o
+  CC       libc/string/libc_a-strncmp.o
+  CC       libc/string/libc_a-strncpy.o
+  CC       libc/string/libc_a-strnlen.o
+  CC       libc/string/libc_a-strnstr.o
+  CC       libc/string/libc_a-strpbrk.o
+  CC       libc/string/libc_a-strrchr.o
+  CC       libc/string/libc_a-strsep.o
+  CC       libc/string/libc_a-strsignal.o
+  CC       libc/string/libc_a-strspn.o
+  CC       libc/string/libc_a-strtok.o
+  CC       libc/string/libc_a-strtok_r.o
+  CC       libc/string/libc_a-strupr.o
+  CC       libc/string/libc_a-strxfrm.o
+  CC       libc/string/libc_a-strstr.o
+  CC       libc/string/libc_a-swab.o
+  CC       libc/string/libc_a-timingsafe_bcmp.o
+  CC       libc/string/libc_a-timingsafe_memcmp.o
+  CC       libc/string/libc_a-u_strerr.o
+  CC       libc/string/libc_a-wcscat.o
+  CC       libc/string/libc_a-wcschr.o
+  CC       libc/string/libc_a-wcscmp.o
+  CC       libc/string/libc_a-wcscoll.o
+  CC       libc/string/libc_a-wcscpy.o
+  CC       libc/string/libc_a-wcscspn.o
+  CC       libc/string/libc_a-wcslcat.o
+  CC       libc/string/libc_a-wcslcpy.o
+  CC       libc/string/libc_a-wcslen.o
+  CC       libc/string/libc_a-wcsncat.o
+  CC       libc/string/libc_a-wcsncmp.o
+  CC       libc/string/libc_a-wcsncpy.o
+  CC       libc/string/libc_a-wcsnlen.o
+  CC       libc/string/libc_a-wcspbrk.o
+  CC       libc/string/libc_a-wcsrchr.o
+  CC       libc/string/libc_a-wcsspn.o
+  CC       libc/string/libc_a-wcsstr.o
+  CC       libc/string/libc_a-wcstok.o
+  CC       libc/string/libc_a-wcswidth.o
+  CC       libc/string/libc_a-wcsxfrm.o
+  CC       libc/string/libc_a-wcwidth.o
+  CC       libc/string/libc_a-wmemchr.o
+  CC       libc/string/libc_a-wmemcmp.o
+  CC       libc/string/libc_a-wmemcpy.o
+  CC       libc/string/libc_a-wmemmove.o
+  CC       libc/string/libc_a-wmemset.o
+  CC       libc/string/libc_a-xpg_strerror_r.o
+  CC       libc/string/libc_a-bcmp.o
+  CC       libc/string/libc_a-memccpy.o
+  CC       libc/string/libc_a-mempcpy.o
+  CC       libc/string/libc_a-stpcpy.o
+  CC       libc/string/libc_a-stpncpy.o
+  CC       libc/string/libc_a-strndup.o
+  CC       libc/string/libc_a-strcasestr.o
+  CC       libc/string/libc_a-strchrnul.o
+  CC       libc/string/libc_a-strndup_r.o
+  CC       libc/string/libc_a-wcpcpy.o
+  CC       libc/string/libc_a-wcpncpy.o
+  CC       libc/string/libc_a-wcsdup.o
+  CC       libc/string/libc_a-gnu_basename.o
+  CC       libc/string/libc_a-memmem.o
+  CC       libc/string/libc_a-memrchr.o
+  CC       libc/string/libc_a-rawmemchr.o
+  CC       libc/string/libc_a-strcasecmp_l.o
+  CC       libc/string/libc_a-strcoll_l.o
+  CC       libc/string/libc_a-strncasecmp_l.o
+  CC       libc/string/libc_a-strverscmp.o
+  CC       libc/string/libc_a-strxfrm_l.o
+  CC       libc/string/libc_a-wcscasecmp.o
+  CC       libc/string/libc_a-wcscasecmp_l.o
+  CC       libc/string/libc_a-wcscoll_l.o
+  CC       libc/string/libc_a-wcsncasecmp.o
+  CC       libc/string/libc_a-wcsncasecmp_l.o
+  CC       libc/string/libc_a-wcsxfrm_l.o
+  CC       libc/string/libc_a-wmempcpy.o
+  CC       libc/signal/libc_a-psignal.o
+  CC       libc/signal/libc_a-raise.o
+  CC       libc/signal/libc_a-signal.o
+  CC       libc/signal/libc_a-sig2str.o
+  CC       libc/time/libc_a-asctime.o
+  CC       libc/time/libc_a-asctime_r.o
+  CC       libc/time/libc_a-clock.o
+  CC       libc/time/libc_a-ctime.o
+  CC       libc/time/libc_a-ctime_r.o
+  CC       libc/time/libc_a-difftime.o
+  CC       libc/time/libc_a-gettzinfo.o
+  CC       libc/time/libc_a-gmtime.o
+  CC       libc/time/libc_a-gmtime_r.o
+  CC       libc/time/libc_a-lcltime.o
+  CC       libc/time/libc_a-lcltime_r.o
+  CC       libc/time/libc_a-mktime.o
+  CC       libc/time/libc_a-month_lengths.o
+  CC       libc/time/libc_a-strftime.o
+  CC       libc/time/libc_a-strptime.o
+  CC       libc/time/libc_a-time.o
+  CC       libc/time/libc_a-tzcalc_limits.o
+  CC       libc/time/libc_a-tzlock.o
+  CC       libc/time/libc_a-tzset.o
+  CC       libc/time/libc_a-tzset_r.o
+  CC       libc/time/libc_a-tzvars.o
+  CC       libc/time/libc_a-wcsftime.o
+  CC       libc/locale/libc_a-locale.o
+  CC       libc/locale/libc_a-localeconv.o
+  CC       libc/locale/libc_a-duplocale.o
+  CC       libc/locale/libc_a-freelocale.o
+  CC       libc/locale/libc_a-getlocalename_l.o
+  CC       libc/locale/libc_a-lctype.o
+  CC       libc/locale/libc_a-lmessages.o
+  CC       libc/locale/libc_a-lnumeric.o
+  CC       libc/locale/libc_a-lmonetary.o
+  CC       libc/locale/libc_a-newlocale.o
+  CC       libc/locale/libc_a-nl_langinfo.o
+  CC       libc/locale/libc_a-timelocal.o
+  CC       libc/locale/libc_a-uselocale.o
+  CC       libc/reent/libc_a-closer.o
+  CC       libc/reent/libc_a-reent.o
+  CC       libc/reent/libc_a-impure.o
+  CC       libc/reent/libc_a-fcntlr.o
+  CC       libc/reent/libc_a-fstatr.o
+  CC       libc/reent/libc_a-getentropyr.o
+  CC       libc/reent/libc_a-getreent.o
+  CC       libc/reent/libc_a-gettimeofdayr.o
+  CC       libc/reent/libc_a-isattyr.o
+  CC       libc/reent/libc_a-linkr.o
+  CC       libc/reent/libc_a-lseekr.o
+  CC       libc/reent/libc_a-mkdirr.o
+  CC       libc/reent/libc_a-openr.o
+  CC       libc/reent/libc_a-readr.o
+  CC       libc/reent/libc_a-renamer.o
+  CC       libc/reent/libc_a-signalr.o
+  CC       libc/reent/libc_a-sbrkr.o
+  CC       libc/reent/libc_a-statr.o
+  CC       libc/reent/libc_a-timesr.o
+  CC       libc/reent/libc_a-unlinkr.o
+  CC       libc/reent/libc_a-writer.o
+  CC       libc/reent/libc_a-execr.o
+  CC       libc/errno/libc_a-errno.o
+  CC       libc/misc/libc_a-__dprintf.o
+  CC       libc/misc/libc_a-unctrl.o
+  CC       libc/misc/libc_a-ffs.o
+  CC       libc/misc/libc_a-init.o
+  CC       libc/misc/libc_a-fini.o
+  CC       libc/syscalls/libc_a-sysclose.o
+  CC       libc/syscalls/libc_a-sysfcntl.o
+  CC       libc/syscalls/libc_a-sysfstat.o
+  CC       libc/syscalls/libc_a-sysgetentropy.o
+  CC       libc/syscalls/libc_a-sysgetpid.o
+  CC       libc/syscalls/libc_a-sysgettod.o
+  CC       libc/syscalls/libc_a-sysisatty.o
+  CC       libc/syscalls/libc_a-syskill.o
+  CC       libc/syscalls/libc_a-syslink.o
+  CC       libc/syscalls/libc_a-syslseek.o
+  CC       libc/syscalls/libc_a-sysopen.o
+  CC       libc/syscalls/libc_a-sysread.o
+  CC       libc/syscalls/libc_a-syssbrk.o
+  CC       libc/syscalls/libc_a-sysstat.o
+  CC       libc/syscalls/libc_a-systimes.o
+  CC       libc/syscalls/libc_a-sysunlink.o
+  CC       libc/syscalls/libc_a-syswrite.o
+  CC       libc/syscalls/libc_a-sysexecve.o
+  CC       libc/syscalls/libc_a-sysfork.o
+  CC       libc/syscalls/libc_a-syswait.o
+  CC       libc/ssp/libc_a-chk_fail.o
+  CC       libc/ssp/libc_a-stack_protector.o
+  CC       libc/ssp/libc_a-memcpy_chk.o
+  CC       libc/ssp/libc_a-memmove_chk.o
+  CC       libc/ssp/libc_a-mempcpy_chk.o
+  CC       libc/ssp/libc_a-memset_chk.o
+  CC       libc/ssp/libc_a-stpcpy_chk.o
+  CC       libc/ssp/libc_a-stpncpy_chk.o
+  CC       libc/ssp/libc_a-strcat_chk.o
+  CC       libc/ssp/libc_a-strcpy_chk.o
+  CC       libc/ssp/libc_a-strncat_chk.o
+  CC       libc/ssp/libc_a-strncpy_chk.o
+  CC       libc/ssp/libc_a-gets_chk.o
+  CC       libc/ssp/libc_a-snprintf_chk.o
+  CC       libc/ssp/libc_a-sprintf_chk.o
+  CC       libc/ssp/libc_a-vsnprintf_chk.o
+  CC       libc/ssp/libc_a-vsprintf_chk.o
+  CC       libc/sys/arm/libc_a-access.o
+  CC       libc/sys/arm/libc_a-aeabi_atexit.o
+  CC       libc/sys/arm/libc_a-sysconf.o
+  CPPAS    libc/machine/arm/libc_a-setjmp.o
+  CPPAS    libc/machine/arm/libc_a-strcmp.o
+  CC       libc/machine/arm/libc_a-strcpy.o
+  CC       libc/machine/arm/libc_a-aeabi_memcpy.o
+  CPPAS    libc/machine/arm/libc_a-aeabi_memcpy-armv7a.o
+  CC       libc/machine/arm/libc_a-aeabi_memmove.o
+  CPPAS    libc/machine/arm/libc_a-aeabi_memmove-soft.o
+  CC       libc/machine/arm/libc_a-aeabi_memset.o
+  CPPAS    libc/machine/arm/libc_a-aeabi_memset-soft.o
+  CC       libc/machine/arm/libc_a-aeabi_memclr.o
+  CC       libc/machine/arm/libc_a-memchr-stub.o
+  CPPAS    libc/machine/arm/libc_a-memchr.o
+  CC       libc/machine/arm/libc_a-memcpy-stub.o
+  CPPAS    libc/machine/arm/libc_a-memcpy.o
+  CC       libc/machine/arm/libc_a-strlen-stub.o
+  CPPAS    libc/machine/arm/libc_a-strlen.o
+  GEN      stamp-libc-math-objects
+  AR       libc.a
+  GEN      libg.a
+/usr/bin/mkdir -p doc
+gcc -g -g -O2 -o doc/makedoc.o -c ../../../newlib-cygwin/newlib/doc/makedoc.c
+gcc -g -O2  -o doc/makedoc doc/makedoc.o
+true "CC_FOR_BUILD=gcc" "CFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "CCASFLAGS=-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "LIBCFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "MAKE=make" "MAKEINFO=/home/student/ESP/newlib-cygwin/missing makeinfo --split-size=5000000 --split-size=5000000  " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/home/student/ESP/newlib-arm-none-eabi" "infodir=/home/student/ESP/newlib-arm-none-eabi/share/info" "libdir=/home/student/ESP/newlib-arm-none-eabi/lib" "prefix=/home/student/ESP/newlib-arm-none-eabi" "tooldir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi" "top_toollibdir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/lib" "AR=arm-none-eabi-ar" "AS=arm-none-eabi-as" "CC=arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   " "LD=arm-none-eabi-ld" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "NM=arm-none-eabi-nm" "PICFLAG=" "RANLIB=arm-none-eabi-ranlib" "DESTDIR=" DO=all multi-do # make
+make[3]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+Checking multilib configuration for libgloss...
+mkdir -p -- arm-none-eabi/libgloss
+Configuring in arm-none-eabi/libgloss
+configure: creating cache ./config.cache
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... arm-none-eabi
+checking target system type... arm-none-eabi
+checking whether build environment is sane... yes
+checking for arm-none-eabi-strip... arm-none-eabi-strip
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... (cached) yes
+checking for arm-none-eabi-gcc... arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    accepts -g... yes
+checking for arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    option to accept ISO C89... none needed
+checking whether arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   ... gcc3
+checking dependency style of arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   ... gcc3
+checking for arm-none-eabi-ar... arm-none-eabi-ar
+checking the archiver (arm-none-eabi-ar) interface... ar
+checking for arm-none-eabi-ranlib... arm-none-eabi-ranlib
+checking for arm-none-eabi-objcopy... arm-none-eabi-objcopy
+checking for arm-none-eabi-objdump... arm-none-eabi-objdump
+checking how to run the C preprocessor... arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm    -E
+checking if target is ELF... yes
+checking for .previous assembler directive... yes
+checking for .popsection assembler directive... yes
+checking for section attributes... yes
+checking for symbol prefix... 
+checking for compiler search settings...  -isystem /usr/lib/gcc/arm-none-eabi/9.2.1/include -isystem /usr/lib/gcc/arm-none-eabi/9.2.1/include-fixed
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: executing default-2 commands
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make  all-recursive
+make[3]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+Making all in .
+make[4]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+  MAKEINFO ../../../newlib-cygwin/libgloss/doc/porting.info
+/home/student/ESP/newlib-cygwin/missing: 81: makeinfo: not found
+WARNING: 'makeinfo' is missing on your system.
+         You should only need it if you modified a '.texi' file, or
+         any other file indirectly affecting the aspect of the manual.
+         You might want to install the Texinfo package:
+         <http://www.gnu.org/software/texinfo/>
+         The spurious makeinfo call might also be the consequence of
+         using a buggy 'make' (AIX, DU, IRIX), in which case you might
+         want to install GNU make:
+         <http://www.gnu.org/software/make/>
+make[4]: *** [Makefile:9524: ../../../newlib-cygwin/libgloss/doc/porting.info] Error 127
+make[4]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[3]: *** [Makefile:9835: all-recursive] Error 1
+make[3]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[2]: *** [Makefile:3158: all] Error 2
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[1]: *** [Makefile:9528: all-target-libgloss] Error 2
+make[1]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi'
+make: *** [Makefile:879: all] Error 2
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ sudo apt install texinfo
+[sudo] password for student: 
+Sorry, try again.
+[sudo] password for student: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libfprint-2-tod1 libllvm10
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libtext-unidecode-perl libxml-libxml-perl libxml-namespacesupport-perl libxml-sax-base-perl
+  libxml-sax-expat-perl libxml-sax-perl tex-common
+Suggested packages:
+  libxml-sax-expatxs-perl debhelper texlive-base texlive-latex-base texlive-plain-generic
+  texlive-fonts-recommended
+The following NEW packages will be installed:
+  libtext-unidecode-perl libxml-libxml-perl libxml-namespacesupport-perl libxml-sax-base-perl
+  libxml-sax-expat-perl libxml-sax-perl tex-common texinfo
+0 upgraded, 8 newly installed, 0 to remove and 192 not upgraded.
+Need to get 1,925 kB of archives.
+After this operation, 13.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m0% [Working][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:1 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 tex-common all 6.13 [32.7 kB]
+[33m1% [1 tex-common 13.5 kB/32.7 kB 41%][0m[33m                                     4% [Working][0m            Get:2 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 libtext-unidecode-perl all 1.30-1 [99.0 kB]
+[33m4% [2 libtext-unidecode-perl 2,473 B/99.0 kB 2%][0m[33m                                                10% [Waiting for headers][0m                         Get:3 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libxml-namespacesupport-perl all 1.12-1 [13.2 kB]
+[33m11% [3 libxml-namespacesupport-perl 1,267 B/13.2 kB 10%][0m[33m                                                        14% [Waiting for headers][0m                         Get:4 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-base-perl all 1.09-1 [18.8 kB]
+[33m14% [4 libxml-sax-base-perl 3,007 B/18.8 kB 16%][0m[33m                                                17% [Waiting for headers][0m                         Get:5 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-perl all 1.02+dfsg-1 [56.2 kB]
+[33m17% [5 libxml-sax-perl 5,238 B/56.2 kB 9%][0m[33m                                          22% [Waiting for headers][0m                         Get:6 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libxml-libxml-perl amd64 2.0134+dfsg-1build1 [320 kB]
+[33m22% [6 libxml-libxml-perl 3,998 B/320 kB 1%][0m                                            Get:7 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libxml-sax-expat-perl all 0.51-1 [10.5 kB]
+[33m38% [7 libxml-sax-expat-perl 10.5 kB/10.5 kB 100%][0m[33m                                                  40% [Waiting for headers][0m                         Get:8 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 texinfo amd64 6.7.0.dfsg.2-5 [1,375 kB]
+[33m41% [8 texinfo 11.1 kB/1,375 kB 1%][0m[33m                                   100% [Working][0m              Fetched 1,925 kB in 4s (476 kB/s)
+
+7[0;37r8[1ASelecting previously unselected package tex-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 194340 files and directories currently installed.)
+Preparing to unpack .../0-tex-common_6.13_all.deb ...
+7[38;0f[42m[30mProgress: [  0%][49m[39m [...................................................................................] 87[38;0f[42m[30mProgress: [  3%][49m[39m [##.................................................................................] 8Unpacking tex-common (6.13) ...
+7[38;0f[42m[30mProgress: [  6%][49m[39m [#####..............................................................................] 8Selecting previously unselected package libtext-unidecode-perl.
+Preparing to unpack .../1-libtext-unidecode-perl_1.30-1_all.deb ...
+7[38;0f[42m[30mProgress: [  9%][49m[39m [#######............................................................................] 8Unpacking libtext-unidecode-perl (1.30-1) ...
+7[38;0f[42m[30mProgress: [ 12%][49m[39m [##########.........................................................................] 8Selecting previously unselected package libxml-namespacesupport-perl.
+Preparing to unpack .../2-libxml-namespacesupport-perl_1.12-1_all.deb ...
+7[38;0f[42m[30mProgress: [ 15%][49m[39m [############.......................................................................] 8Unpacking libxml-namespacesupport-perl (1.12-1) ...
+7[38;0f[42m[30mProgress: [ 18%][49m[39m [###############....................................................................] 8Selecting previously unselected package libxml-sax-base-perl.
+Preparing to unpack .../3-libxml-sax-base-perl_1.09-1_all.deb ...
+7[38;0f[42m[30mProgress: [ 21%][49m[39m [#################..................................................................] 8Unpacking libxml-sax-base-perl (1.09-1) ...
+7[38;0f[42m[30mProgress: [ 24%][49m[39m [####################...............................................................] 8Selecting previously unselected package libxml-sax-perl.
+Preparing to unpack .../4-libxml-sax-perl_1.02+dfsg-1_all.deb ...
+7[38;0f[42m[30mProgress: [ 27%][49m[39m [######################.............................................................] 8Unpacking libxml-sax-perl (1.02+dfsg-1) ...
+7[38;0f[42m[30mProgress: [ 30%][49m[39m [#########################..........................................................] 8Selecting previously unselected package libxml-libxml-perl.
+Preparing to unpack .../5-libxml-libxml-perl_2.0134+dfsg-1build1_amd64.deb ...
+7[38;0f[42m[30mProgress: [ 33%][49m[39m [###########################........................................................] 8Unpacking libxml-libxml-perl (2.0134+dfsg-1build1) ...
+7[38;0f[42m[30mProgress: [ 36%][49m[39m [##############################.....................................................] 8Selecting previously unselected package libxml-sax-expat-perl.
+Preparing to unpack .../6-libxml-sax-expat-perl_0.51-1_all.deb ...
+7[38;0f[42m[30mProgress: [ 39%][49m[39m [################################...................................................] 8Unpacking libxml-sax-expat-perl (0.51-1) ...
+7[38;0f[42m[30mProgress: [ 42%][49m[39m [###################################................................................] 8Selecting previously unselected package texinfo.
+Preparing to unpack .../7-texinfo_6.7.0.dfsg.2-5_amd64.deb ...
+7[38;0f[42m[30mProgress: [ 45%][49m[39m [#####################################..............................................] 8Unpacking texinfo (6.7.0.dfsg.2-5) ...
+7[38;0f[42m[30mProgress: [ 48%][49m[39m [########################################...........................................] 8Setting up libxml-namespacesupport-perl (1.12-1) ...
+7[38;0f[42m[30mProgress: [ 52%][49m[39m [##########################################.........................................] 87[38;0f[42m[30mProgress: [ 55%][49m[39m [#############################################......................................] 8Setting up tex-common (6.13) ...
+7[38;0f[42m[30mProgress: [ 58%][49m[39m [###############################################....................................] 8update-language: texlive-base not installed and configured, doing nothing!
+7[38;0f[42m[30mProgress: [ 61%][49m[39m [##################################################.................................] 8Setting up libxml-sax-base-perl (1.09-1) ...
+7[38;0f[42m[30mProgress: [ 64%][49m[39m [####################################################...............................] 87[38;0f[42m[30mProgress: [ 67%][49m[39m [#######################################################............................] 8Setting up libtext-unidecode-perl (1.30-1) ...
+7[38;0f[42m[30mProgress: [ 70%][49m[39m [#########################################################..........................] 87[38;0f[42m[30mProgress: [ 73%][49m[39m [############################################################.......................] 8Setting up libxml-sax-perl (1.02+dfsg-1) ...
+7[38;0f[42m[30mProgress: [ 76%][49m[39m [##############################################################.....................] 8update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::PurePerl with priority 10...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+
+Creating config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+7[38;0f[42m[30mProgress: [ 79%][49m[39m [#################################################################..................] 8Setting up libxml-libxml-perl (2.0134+dfsg-1build1) ...
+7[38;0f[42m[30mProgress: [ 82%][49m[39m [###################################################################................] 8update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX::Parser with priority 50...
+update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX with priority 50...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+7[38;0f[42m[30mProgress: [ 85%][49m[39m [######################################################################.............] 8Setting up libxml-sax-expat-perl (0.51-1) ...
+7[38;0f[42m[30mProgress: [ 88%][49m[39m [########################################################################...........] 8update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::Expat with priority 50...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+7[38;0f[42m[30mProgress: [ 91%][49m[39m [###########################################################################........] 8Setting up texinfo (6.7.0.dfsg.2-5) ...
+7[38;0f[42m[30mProgress: [ 94%][49m[39m [#############################################################################......] 87[38;0f[42m[30mProgress: [ 97%][49m[39m [################################################################################...] 8Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for install-info (6.7.0.dfsg.2-5) ...
+
+7[0;38r8[1A[J]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ sudo apt install texinfomake CFLAGS_FOR_TARGET="-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" CCASFLAGS="-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__"
+make[1]: Entering directory '/home/student/ESP/newlib-arm-none-eabi'
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/etc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/etc'
+Checking multilib configuration for newlib...
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+make "CC_FOR_BUILD=gcc" "CFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "CCASFLAGS=-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "LIBCFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "MAKE=make" "MAKEINFO=/home/student/ESP/newlib-cygwin/missing makeinfo --split-size=5000000 --split-size=5000000 " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/home/student/ESP/newlib-arm-none-eabi" "infodir=/home/student/ESP/newlib-arm-none-eabi/share/info" "libdir=/home/student/ESP/newlib-arm-none-eabi/lib" "prefix=/home/student/ESP/newlib-arm-none-eabi" "tooldir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi" "top_toollibdir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/lib" "AR=arm-none-eabi-ar" "AS=arm-none-eabi-as" "CC=arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   " "LD=arm-none-eabi-ld" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "NM=arm-none-eabi-nm" "PICFLAG=" "RANLIB=arm-none-eabi-ranlib" "DESTDIR=" all-am
+make[3]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+true "CC_FOR_BUILD=gcc" "CFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "CCASFLAGS=-march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "INSTALL=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "LIBCFLAGS_FOR_TARGET=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "MAKE=make" "MAKEINFO=/home/student/ESP/newlib-cygwin/missing makeinfo --split-size=5000000 --split-size=5000000  " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/home/student/ESP/newlib-arm-none-eabi" "infodir=/home/student/ESP/newlib-arm-none-eabi/share/info" "libdir=/home/student/ESP/newlib-arm-none-eabi/lib" "prefix=/home/student/ESP/newlib-arm-none-eabi" "tooldir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi" "top_toollibdir=/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/lib" "AR=arm-none-eabi-ar" "AS=arm-none-eabi-as" "CC=arm-none-eabi-gcc -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/ -isystem /home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib/targ-include -isystem /home/student/ESP/newlib-cygwin/newlib/libc/include -B/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/arm -L/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss/libnosys -L/home/student/ESP/newlib-cygwin/libgloss/arm   " "LD=arm-none-eabi-ld" "LIBCFLAGS=-ffunction-sections -fdata-sections -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__ -Os -fomit-frame-pointer -march=armv7e-m+fp -mcpu=cortex-m4 -mthumb -mthumb-interwork -D__thumb2__ -D__BUFSIZ__=256" "NM=arm-none-eabi-nm" "PICFLAG=" "RANLIB=arm-none-eabi-ranlib" "DESTDIR=" DO=all multi-do # make
+make[3]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/newlib'
+Checking multilib configuration for libgloss...
+make[2]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make  all-recursive
+make[3]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+Making all in .
+make[4]: Entering directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+  MAKEINFO ../../../newlib-cygwin/libgloss/doc/porting.info
+../../../newlib-cygwin/libgloss/doc/porting.texi:565: warning: @ref node name should not contain `.'
+../../../newlib-cygwin/libgloss/doc/porting.texi:742: warning: @ref node name should not contain `.'
+../../../newlib-cygwin/libgloss/doc/porting.texi:933: warning: @ref node name should not contain `.'
+  CPPAS    arm/linux-syscalls0.o
+  CC       arm/linux-syscalls1.o
+  AR       arm/libgloss-linux.a
+  CC       arm/_exit.o
+  CC       arm/_kill.o
+  CC       arm/ftruncate.o
+  CC       arm/libcfunc.o
+  CC       arm/syscalls.o
+  CPPAS    arm/trap.o
+  CC       arm/truncate.o
+  AR       arm/librdpmon.a
+  CC       arm/arm_librdimon_a-_exit.o
+  CC       arm/arm_librdimon_a-_kill.o
+  CC       arm/arm_librdimon_a-ftruncate.o
+  CC       arm/arm_librdimon_a-libcfunc.o
+  CC       arm/arm_librdimon_a-syscalls.o
+  CPPAS    arm/arm_librdimon_a-trap.o
+  CC       arm/arm_librdimon_a-truncate.o
+  AR       arm/librdimon.a
+  CC       arm/arm_librdimon_v2m_a-_exit.o
+  CC       arm/arm_librdimon_v2m_a-_kill.o
+  CC       arm/arm_librdimon_v2m_a-ftruncate.o
+  CC       arm/arm_librdimon_v2m_a-libcfunc.o
+  CC       arm/arm_librdimon_v2m_a-syscalls.o
+  CPPAS    arm/arm_librdimon_v2m_a-trap.o
+  CC       arm/arm_librdimon_v2m_a-truncate.o
+  AR       arm/librdimon-v2m.a
+  CC       libnosys/chown.o
+  CC       libnosys/close.o
+  CC       libnosys/environ.o
+  CC       libnosys/errno.o
+  CC       libnosys/execve.o
+  CC       libnosys/fork.o
+  CC       libnosys/fstat.o
+  CC       libnosys/getpid.o
+  CC       libnosys/gettod.o
+  CC       libnosys/isatty.o
+  CC       libnosys/kill.o
+  CC       libnosys/link.o
+  CC       libnosys/lseek.o
+  CC       libnosys/open.o
+  CC       libnosys/read.o
+  CC       libnosys/readlink.o
+  CC       libnosys/sbrk.o
+  CC       libnosys/stat.o
+  CC       libnosys/symlink.o
+  CC       libnosys/times.o
+  CC       libnosys/unlink.o
+  CC       libnosys/wait.o
+  CC       libnosys/write.o
+  CC       libnosys/getentropy.o
+  CC       libnosys/_exit.o
+  AR       libnosys/libnosys.a
+  AR       libobjs.a
+  CC       arm/cpu-init/rdimon-aem.o
+  CPPAS    arm/crt0.o
+  CC       arm/linux-crt0.o
+  CPPAS    arm/redboot-crt0.o
+  CC       arm/redboot-syscalls.o
+  CPPAS    arm/rdpmon-crt0.o
+  CPPAS    arm/rdimon-crt0.o
+  CPPAS    arm/rdimon-crt0-v2m.o
+  GEN      arm/nano.specs
+  GEN      arm/linux.specs
+  GEN      arm/redboot.ld
+  GEN      arm/redboot.specs
+  GEN      arm/rdpmon.specs
+  GEN      arm/rdimon.specs
+  GEN      arm/rdimon-v2m.specs
+  GEN      arm/aprofile-validation.specs
+  GEN      arm/aprofile-validation-v2m.specs
+  GEN      arm/aprofile-ve-v2m.specs
+  GEN      arm/aprofile-ve.specs
+  GEN      arm/pid.specs
+  GEN      arm/iq80310.specs
+true  DO=all multi-do # make
+make[4]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[3]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[2]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi/arm-none-eabi/libgloss'
+make[1]: Leaving directory '/home/student/ESP/newlib-arm-none-eabi'
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ ls 
+[0m[01;34marm-none-eabi[0m  config.log  [01;32mconfig.status[0m  [01;34metc[0m  Makefile  serdep.tmp  typescript
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ ls arm-none-eabi/newlib/
+config.cache   [0m[01;34mdoc[0m     libg.a  Makefile      _newlib_version.h  stamp-libc-math-objects
+config.log     [01;34mlibc[0m    [01;34mlibm[0m    multilib.out  stamp-h1           stmp-targ-include
+[01;32mconfig.status[0m  libc.a  libm.a  newlib.h      stamp-h2           [01;34mtarg-include[0m
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ [K]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ [K]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$ arm-none-eabi-ar t arm-none-eabi/ne wlib/libc.a | more
+libc_a-strncpy.o
+libc_a-twalk.o
+libc_a-fwalk.o
+libc_a-toupper.o
+libc_a-wcstoumax.o
+libc_a-vallocr.o
+libc_a-sysgetpid.o
+libc_a-rand.o
+libc_a-wcsncasecmp.o
+libc_a-iswalnum_l.o
+libc_a-strtoll.o
+libc_a-fread_u.o
+libc_a-getenv.o
+libc_a-strcasestr.o
+libc_a-strcpy_chk.o
+libc_a-getlocalename_l.o
+libc_a-toupper_l.o
+libc_a-swprintf.o
+libc_a-tmpfile.o
+libc_a-timingsafe_bcmp.o
+libc_a-strlen-stub.o
+libc_a-memset.o
+libc_a-wmemset.o
+libc_a-wcstold.o
+libc_a-fileno.o
+[7m--More--[27mlibc_a-atol.o
+libc_a-vsnprintf.o
+libc_a-wcslcpy.o
+libc_a-reallocf.o
+libc_a-sprint_r.o
+libc_a-sig2str.o
+libc_a-fputwc_u.o
+libc_a-argz_append.o
+libc_a-timesr.o
+libc_a-siscanf.o
+libc_a-gnu_basename.o
+libc_a-vsprintf_chk.o
+libc_a-vsnprintf_chk.o
+libc_a-envlock.o
+libc_a-wctrans.o
+libc_a-vwprintf.o
+libc_a-setlinebuf.o
+libc_a-fputws_u.o
+libc_a-strtok.o
+libc_a-asnprintf.o
+libc_a-vasiprintf.o
+libc_a-iscntrl.o
+libc_a-assert.o
+libc_a-strptime.o
+libc_a-argz_next.o
+[7m--More--[27mlibc_a-vsiprintf.o
+libc_a-strncasecmp.o
+libc_a-strerror_r.o
+libc_a-bsd_qsort_r.o
+libc_a-isascii_l.o
+libc_a-impure.o
+libc_a-fscanf.o
+libc_a-wcstoul.o
+libc_a-iswupper.o
+libc_a-mprec.o
+libc_a-iswgraph.o
+libc_a-wcsncasecmp_l.o
+libc_a-itoa.o
+libc_a-msize.o
+libc_a-fstatr.o
+libc_a-qsort.o
+libc_a-getw.o
+libc_a-explicit_bzero.o
+libc_a-fdopen.o
+libc_a-abs.o
+libc_a-puts.o
+libc_a-fgetwc.o
+libc_a-gets.o
+libc_a-aeabi_memclr.o
+libc_a-efgcvt.o
+[7m--More--[27mlibc_a-fread.o
+libc_a-setenv_r.o
+libc_a-syssbrk.o
+libc_a-wcscat.o
+libc_a-argz_extract.o
+libc_a-mblen.o
+libc_a-strverscmp.o
+libc_a-strtoll_r.o
+libc_a-fwrite_u.o
+libc_a-ispunct_l.o
+libc_a-aeabi_memmove.o
+libc_a-strchrnul.o
+libc_a-stpcpy_chk.o
+libc_a-localeconv.o
+libc_a-toascii.o
+libc_a-putwchar_u.o
+libc_a-putwc_u.o
+libc_a-vfprintf.o
+libc_a-drand48.o
+libc_a-fputc.o
+libc_a-index.o
+libc_a-wcwidth.o
+libc_a-atof.o
+libc_a-system.o
+libc_a-systimes.o
+[7m--More--[27mlibc_a-vdprintf.o
+libc_a-strtod.o
+libc_a-sswprint_r.o
+libc_a-ctime_r.o
+libc_a-argz_create_sep.o
+libc_a-iswblank_l.o
+libc_a-getc.o
+libc_a-lmonetary.o
+libc_a-stack_protector.o
+libc_a-wcsncmp.o
+libc_a-pvallocr.o
+libc_a-random.o
+libc_a-sysfstat.o
+libc_a-iswlower_l.o
+libc_a-btowc.o
+libc_a-gdtoa-gmisc.o
+libc_a-fflush_u.o
+libc_a-ispunct.o
+libc_a-lcltime.o
+libc_a-envz_get.o
+libc_a-sccl.o
+libc_a-vfiscanf.o
+libc_a-strlwr.o
+libc_a-fiscanf.o
+libc_a-strdup.o
+[7m--More--[27mlibc_a-isascii.o
+libc_a-fseek.o
+libc_a-wcsstr.o
+libc_a-wcstod.o
+libc_a-malloptr.o
+libc_a-msizer.o
+libc_a-psignal.o
+libc_a-wcstoll.o
+libc_a-isprint_l.o
+libc_a-fopencookie.o
+libc_a-mempcpy.o
+libc_a-snprintf_chk.o
+libc_a-locale.o
+libc_a-vswprintf.o
+libc_a-jp2uc.o
+libc_a-mallstatsr.o
+libc_a-memchr-stub.o
+libc_a-getline.o
+libc_a-strchr.o
+libc_a-div.o
+libc_a-wbufw.o
+libc_a-wcsrtombs.o
+libc_a-wcscoll.o
+libc_a-syskill.o
+libc_a-fgetwc_u.o
+[7m--More--[27mlibc_a-svfprintf.o
+libc_a-iswalpha_l.o
+libc_a-renamer.o
+libc_a-strcasecmp_l.o
+libc_a-setjmp.o
+libc_a-gdtoa-gethex.o
+libc_a-lmessages.o
+libc_a-towlower.o
+libc_a-towctrans_l.o
+libc_a-sscanf.o
+libc_a-getwc.o
+libc_a-strstr.o
+libc_a-putchar.o
+libc_a-arc4random_uniform.o
+libc_a-flags.o
+libc_a-wcsxfrm.o
+libc_a-atoff.o
+libc_a-strtoul.o
+libc_a-vprintf.o
+libc_a-svfiwprintf.o
+libc_a-difftime.o
+libc_a-mbtowc_r.o
+libc_a-argz_create.o
+libc_a-iprintf.o
+libc_a-timelocal.o
+[7m--More--[27mlibc_a-wcsspn.o
+libc_a-syswrite.o
+libc_a-mbsnrtowcs.o
+libc_a-iswpunct.o
+libc_a-l64a.o
+libc_a-fini.o
+libc_a-raise.o
+libc_a-iswctype.o
+libc_a-gdtoa-ldtoa.o
+libc_a-isattyr.o
+libc_a-jrand48.o
+libc_a-hash_func.o
+libc_a-isspace.o
+libc_a-ftello.o
+libc_a-wprintf.o
+libc_a-vfiwscanf.o
+libc_a-__exp10.o
+libc_a-rewind.o
+libc_a-strncmp.o
+libc_a-fwrite.o
+libc_a-tsearch.o
+libc_a-strcoll.o
+libc_a-tolower.o
+libc_a-wcstombs.o
+libc_a-wcrtomb.o
+[7m--More--[27mlibc_a-sysgettod.o
+libc_a-rand_r.o
+libc_a-wcscoll_l.o
+libc_a-wcstoll_r.o
+libc_a-fputs_u.o
+libc_a-isdigit_l.o
+libc_a-stpcpy.o
+libc_a-strncat_chk.o
+libc_a-ndbm.o
+libc_a-tzset_r.o
+libc_a-vasniprintf.o
+libc_a-iswxdigit.o
+libc_a-__dprintf.o
+libc_a-strlen.o
+libc_a-memmove.o
+libc_a-arc4random.o
+libc_a-wmemmove.o
+libc_a-findfp.o
+libc_a-calloc.o
+libc_a-vsprintf.o
+libc_a-wcslcat.o
+libc_a-reallocarray.o
+libc_a-swprint_r.o
+libc_a-asctime.o
+libc_a-fputws.o
+[7m--More--[27mlibc_a-argz_add_sep.o
+libc_a-sniprintf.o
+libc_a-memmem.o
+libc_a-sysconf.o
+libc_a-environ.o
+libc_a-wctype_l.o
+libc_a-setbuffer.o
+libc_a-fwscanf.o
+libc_a-strsep.o
+libc_a-execr.o
+libc_a-wcstoull_r.o
+libc_a-clearerr_u.o
+libc_a-putw.o
+libc_a-isdigit.o
+libc_a-aligned_alloc.o
+libc_a-strftime.o
+libc_a-argz_replace.o
+libc_a-viscanf.o
+libc_a-strlcat.o
+libc_a-iscntrl_l.o
+libc_a-reent.o
+libc_a-syswait.o
+libc_a-wcsnlen.o
+libc_a-iswspace_l.o
+libc_a-mbrlen.o
+[7m--More--[27mlibc_a-getsubopt.o
+libc_a-iswdigit_l.o
+libc_a-unctrl.o
+libc_a-labs.o
+libc_a-mrand48.o
+libc_a-getentropyr.o
+libc_a-hash.o
+libc_a-asiprintf.o
+libc_a-ffsl.o
+libc_a-fclose.o
+libc_a-abort.o
+libc_a-refill.o
+libc_a-printf.o
+libc_a-vasnprintf.o
+libc_a-aeabi_memmove-soft.o
+libc_a-setenv.o
+libc_a-utoa.o
+libc_a-svfwprintf.o
+libc_a-sysread.o
+libc_a-gmtime.o
+libc_a-u_strerr.o
+libc_a-mbstowcs_r.o
+libc_a-strxfrm_l.o
+libc_a-strtoull.o
+libc_a-isspace_l.o
+[7m--More--[27mlibc_a-funopen.o
+libc_a-aeabi_memcpy-armv7a.o
+libc_a-strndup_r.o
+libc_a-stpncpy_chk.o
+libc_a-duplocale.o
+libc_a-toascii_l.o
+libc_a-putwchar.o
+libc_a-putwc.o
+libc_a-vfiprintf.o
+libc_a-strcasecmp.o
+libc_a-wmemcpy.o
+libc_a-strtold.o
+libc_a-callocr.o
+libc_a-fgetpos.o
+libc_a-vsscanf.o
+libc_a-sb_charsets.o
+libc_a-ssputs_r.o
+libc_a-asctime_r.o
+libc_a-argz_add.o
+libc_a-iswblank.o
+libc_a-getchar.o
+libc_a-lnumeric.o
+libc_a-chk_fail.o
+libc_a-wcsncpy.o
+libc_a-valloc.o
+[7m--More--[27mlibc_a-realloc.o
+libc_a-sysgetentropy.o
+libc_a-iswlower.o
+libc_a-a64l.o
+libc_a-openr.o
+libc_a-fgetc_u.o
+libc_a-hcreate_r.o
+libc_a-islower.o
+libc_a-month_lengths.o
+libc_a-envz_add.o
+libc_a-viprintf.o
+libc_a-fiprintf.o
+libc_a-strdup_r.o
+libc_a-fsetpos.o
+libc_a-isalpha_l.o
+libc_a-wcstok.o
+libc_a-wcstoimax.o
+libc_a-malignr.o
+libc_a-mstats.o
+libc_a-wmempcpy.o
+libc_a-nrand48.o
+libc_a-getreent.o
+libc_a-imaxabs.o
+libc_a-hash_bigkey.o
+libc_a-vasprintf.o
+[7m--More--[27mlibc_a-ffsll.o
+libc_a-ferror.o
+libc_a-tzset.o
+libc_a-_Exit.o
+libc_a-sfputws_r.o
+libc_a-putc_u.o
+libc_a-mallocr.o
+libc_a-memchr.o
+libc_a-getdelim.o
+libc_a-strcat.o
+libc_a-dtoa.o
+libc_a-wsetup.o
+libc_a-wcsnrtombs.o
+libc_a-wcscmp.o
+libc_a-sysisatty.o
+libc_a-fgetws.o
+libc_a-statr.o
+libc_a-stdio_ext.o
+libc_a-strcoll_l.o
+libc_a-aeabi_memcpy.o
+libc_a-wcpcpy.o
+libc_a-freer.o
+libc_a-towupper_l.o
+libc_a-sprintf.o
+libc_a-getwchar_u.o
+[7m--More--[27mlibc_a-strtok_r.o
+libc_a-svfscanf.o
+libc_a-putc.o
+libc_a-cxa_atexit.o
+libc_a-fopen.o
+libc_a-memcmp.o
+libc_a-atoi.o
+libc_a-wcswidth.o
+libc_a-vscanf.o
+libc_a-strtol.o
+libc_a-svfiwscanf.o
+libc_a-gettzinfo.o
+libc_a-mbtowc.o
+libc_a-argz_count.o
+libc_a-nl_langinfo.o
+libc_a-wctomb_r.o
+libc_a-memmove_chk.o
+libc_a-wcslen.o
+libc_a-mbsrtowcs.o
+libc_a-iswprint_l.o
+libc_a-sysclose.o
+libc_a-lldiv.o
+libc_a-strrchr.o
+libc_a-iswcntrl_l.o
+libc_a-gdtoa-gdtoa.o
+[7m--More--[27mlibc_a-linkr.o
+libc_a-erand48.o
+libc_a-hash_log2.o
+libc_a-isxdigit.o
+libc_a-fseeko.o
+libc_a-wscanf.o
+libc_a-vfiwprintf.o
+libc_a-__call_atexit.o
+libc_a-rget.o
+libc_a-wcscasecmp_l.o
+libc_a-strnstr.o
+libc_a-tfind.o
+libc_a-ftell.o
+libc_a-isalnum_l.o
+libc_a-memset_chk.o
+libc_a-wcstombs_r.o
+libc_a-on_exit_args.o
+libc_a-wcstoull.o
+libc_a-islower_l.o
+libc_a-fputc_u.o
+libc_a-stpncpy.o
+libc_a-strncpy_chk.o
+libc_a-bsearch.o
+libc_a-tzvars.o
+libc_a-ungetwc.o
+[7m--More--[27mlibc_a-iswxdigit_l.o
+libc_a-errno.o
+libc_a-malloc.o
+libc_a-memcpy-stub.o
+libc_a-getchar_u.o
+libc_a-bcmp.o
+libc_a-putenv.o
+libc_a-wcscspn.o
+libc_a-syslseek.o
+libc_a-fgetws_u.o
+libc_a-svfiprintf.o
+libc_a-memrchr.o
+libc_a-aeabi_atexit.o
+libc_a-dtoastub.o
+libc_a-wctype.o
+libc_a-setbuf.o
+libc_a-fwprintf.o
+libc_a-strsignal.o
+libc_a-atoll.o
+libc_a-writer.o
+libc_a-seed48.o
+libc_a-dprintf.o
+libc_a-flsl.o
+libc_a-fgetc.o
+libc_a-isalnum.o
+[7m--More--[27mlibc_a-tzcalc_limits.o
+libc_a-argz_stringify.o
+libc_a-vsniprintf.o
+libc_a-strlcpy.o
+libc_a-isblank_l.o
+libc_a-closer.o
+libc_a-wcspbrk.o
+libc_a-sysfork.o
+libc_a-iswspace.o
+libc_a-mbrtowc.o
+libc_a-getopt.o
+libc_a-ffs.o
+libc_a-iswdigit.o
+libc_a-lseekr.o
+libc_a-ldiv.o
+libc_a-lrand48.o
+libc_a-fileno_u.o
+libc_a-hash_page.o
+libc_a-fcloseall.o
+libc_a-bcopy.o
+libc_a-clearerr.o
+libc_a-__atexit.o
+libc_a-envz_merge.o
+libc_a-remove.o
+libc_a-asniprintf.o
+[7m--More--[27mlibc_a-perror.o
+libc_a-aeabi_memset.o
+libc_a-putenv_r.o
+libc_a-strtoumax.o
+libc_a-svfwscanf.o
+libc_a-sysopen.o
+libc_a-gmtime_r.o
+libc_a-timingsafe_memcmp.o
+libc_a-mbstowcs.o
+libc_a-iswalnum.o
+libc_a-srand48.o
+libc_a-fsetlocking.o
+libc_a-getenv_r.o
+libc_a-strndup.o
+libc_a-strcat_chk.o
+libc_a-freelocale.o
+libc_a-tolower_l.o
+libc_a-swscanf.o
+libc_a-tmpnam.o
+libc_a-swab.o
+libc_a-rindex.o
+libc_a-strtorx.o
+libc_a-cfreer.o
+libc_a-wmemcmp.o
+libc_a-fgets.o
+[7m--More--[27mlibc_a-wbuf.o
+libc_a-reallocr.o
+libc_a-ssputws_r.o
+libc_a-clock.o
+libc_a-unlinkr.o
+libc_a-siprintf.o
+libc_a-wcsdup.o
+libc_a-access.o
+libc_a-eprintf.o
+libc_a-sprintf_chk.o
+libc_a-wctrans_l.o
+libc_a-vwscanf.o
+libc_a-setvbuf.o
+libc_a-fwide.o
+libc_a-strspn.o
+libc_a-readr.o
+libc_a-fgets_u.o
+libc_a-tdelete.o
+libc_a-isupper.o
+libc_a-mktime.o
+libc_a-envz_remove.o
+libc_a-vfwprintf.o
+libc_a-strncat.o
+libc_a-qsort_r.o
+libc_a-strerror.o
+[7m--More--[27mlibc_a-isblank.o
+libc_a-fcntlr.o
+libc_a-freopen.o
+libc_a-wcstol.o
+libc_a-iswupper_l.o
+libc_a-iswgraph_l.o
+libc_a-mlock.o
+libc_a-wcsxfrm_l.o
+libc_a-mtrim.o
+libc_a-gettimeofdayr.o
+libc_a-imaxdiv.o
+libc_a-hash_buf.o
+libc_a-mktemp.o
+libc_a-fls.o
+libc_a-feof.o
+libc_a-tzlock.o
+libc_a-__ten_mu.o
+libc_a-sfputs_r.o
+libc_a-putchar_u.o
+libc_a-diprintf.o
+libc_a-makebuf.o
+libc_a-aeabi_memset-soft.o
+libc_a-ecvtbuf.o
+libc_a-fputs.o
+libc_a-rpmatch.o
+[7m--More--[27mlibc_a-sysstat.o
+libc_a-wcschr.o
+libc_a-argz_insert.o
+libc_a-mblen_r.o
+libc_a-sbrkr.o
+libc_a-strncasecmp_l.o
+libc_a-open_memstream.o
+libc_a-wcpncpy.o
+libc_a-strcpy.o
+libc_a-exit.o
+libc_a-towupper.o
+libc_a-snprintf.o
+libc_a-getwchar.o
+libc_a-strupr.o
+libc_a-vdiprintf.o
+libc_a-cxa_finalize.o
+libc_a-fprintf.o
+libc_a-wmemchr.o
+libc_a-ctype_.o
+libc_a-atexit.o
+libc_a-sysunlink.o
+libc_a-strtoimax.o
+libc_a-ungetc.o
+libc_a-ssprint_r.o
+libc_a-ctime.o
+[7m--More--[27mlibc_a-argz_delete.o
+libc_a-newlocale.o
+libc_a-strtodg.o
+libc_a-memcpy_chk.o
+libc_a-wcsncat.o
+libc_a-on_exit.o
+libc_a-iswprint.o
+libc_a-sysfcntl.o
+libc_a-llabs.o
+libc_a-strpbrk.o
+libc_a-iswcntrl.o
+libc_a-gdtoa-dmisc.o
+libc_a-ferror_u.o
+libc_a-isprint.o
+libc_a-lcltime_r.o
+libc_a-envz_entry.o
+libc_a-scanf.o
+libc_a-vfscanf.o
+libc_a-wcscasecmp.o
+libc_a-strnlen.o
+libc_a-strcspn.o
+libc_a-fvwrite.o
+libc_a-tdestroy.o
+libc_a-categories.o
+libc_a-wctomb.o
+[7m--More--[27mlibc_a-mempcpy_chk.o
+libc_a-quick_exit.o
+libc_a-strtoull_r.o
+libc_a-isupper_l.o
+libc_a-fpurge.o
+libc_a-memccpy.o
+libc_a-gets_chk.o
+libc_a-wcsftime.o
+libc_a-vswscanf.o
+libc_a-isxdigit_l.o
+libc_a-memcpy.o
+libc_a-mallinfor.o
+libc_a-getc_u.o
+libc_a-xpg_strerror_r.o
+libc_a-wctob.o
+libc_a-wcscpy.o
+libc_a-syslink.o
+libc_a-fputwc.o
+libc_a-svfiscanf.o
+libc_a-iswalpha.o
+libc_a-signalr.o
+libc_a-rawmemchr.o
+libc_a-strcmp.o
+libc_a-gdtoa-hexnan.o
+libc_a-lctype.o
+[7m--More--[27mlibc_a-towlower_l.o
+libc_a-towctrans.o
+libc_a-stdio.o
+libc_a-getwc_u.o
+libc_a-strxfrm.o
+libc_a-rand48.o
+libc_a-feof_u.o
+libc_a-flsll.o
+libc_a-isalpha.o
+libc_a-fflush.o
+libc_a-time.o
+libc_a-buf_findstr.o
+libc_a-vsiscanf.o
+libc_a-iscanf.o
+libc_a-uselocale.o
+libc_a-wcsrchr.o
+libc_a-sysexecve.o
+libc_a-mbsinit.o
+libc_a-iswpunct_l.o
+libc_a-malign.o
+libc_a-signal.o
+libc_a-init.o
+libc_a-iswctype_l.o
+libc_a-mkdirr.o
+libc_a-ldtoa.o
+[7m--More--[27mlibc_a-fmemopen.o
+libc_a-lcong48.o
+libc_a-hcreate.o
+libc_a-asprintf.o
+libc_a-bzero.o
+libc_a-vfwscanf.o
+libc_a-__adjust.o
+libc_a-envz_strip.o
+libc_a-rename.o
+libm_a-s_fpclassify.o
+libm_a-sf_fpclassify.o
+libm_a-s_isinf.o
+libm_a-sf_isinf.o
+libm_a-s_isnan.o
+libm_a-sf_isnan.o
+libm_a-s_isinfd.o
+libm_a-sf_isinff.o
+libm_a-s_isnand.o
+libm_a-sf_isnanf.o
+libm_a-s_nan.o
+libm_a-sf_nan.o
+libm_a-s_ldexp.o
+libm_a-sf_ldexp.o
+libm_a-s_frexp.o
+libm_a-sf_frexp.o
+[7m--More--[27mlibm_a-frexpl.o
+libm_a-s_modf.o
+libm_a-sf_modf.o
+libm_a-s_scalbn.o
+libm_a-sf_scalbn.o
+libm_a-s_finite.o
+libm_a-sf_finite.o
+libm_a-s_copysign.o
+libm_a-sf_copysign.o
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$  arm-none-eabi-ar t arm-none-eabi/newlib/libc.a | more[K[K[K[K[K[K[K[K[K[Km.a | more
+libm_a-atan2l.o
+libm_a-cproj.o
+libm_a-s_isnan.o
+libm_a-ef_atan2.o
+libm_a-sf_exp10.o
+libm_a-sf_atan.o
+libm_a-s_ceil.o
+libm_a-w_scalb.o
+libm_a-sf_exp2_data.o
+libm_a-fedisableexcept.o
+libm_a-creall.o
+libm_a-wf_fmod.o
+libm_a-carg.o
+libm_a-w_exp.o
+libm_a-cargl.o
+libm_a-ef_tgamma.o
+libm_a-llroundl.o
+libm_a-feclearexcept.o
+libm_a-k_cos.o
+libm_a-sqrtl.o
+libm_a-w_lgamma.o
+libm_a-sinf.o
+libm_a-cargf.o
+libm_a-fegetenv.o
+libm_a-catanl.o
+[7m--More--[27mlibm_a-s_lrint.o
+libm_a-w_acosh.o
+libm_a-e_atanh.o
+libm_a-nearbyintl.o
+libm_a-coshl.o
+libm_a-log.o
+libm_a-cimag.o
+libm_a-ef_sinh.o
+libm_a-sf_lround.o
+libm_a-kf_sin.o
+libm_a-sf_pow10.o
+libm_a-w_drem.o
+libm_a-wf_scalb.o
+libm_a-cosl.o
+libm_a-csinhl.o
+libm_a-nexttoward.o
+libm_a-clogf.o
+libm_a-sf_fma_arm.o
+libm_a-casinf.o
+libm_a-wf_lgamma.o
+libm_a-cephes_subr.o
+libm_a-s_log2.o
+libm_a-e_asin.o
+libm_a-s_sin.o
+libm_a-s_nearbyint.o
+[7m--More--[27mlibm_a-sf_modf.o
+libm_a-feenableexcept.o
+libm_a-fetestexcept.o
+libm_a-cbrtl.o
+libm_a-wf_j1.o
+libm_a-ccos.o
+libm_a-w_atan2.o
+libm_a-s_fma.o
+libm_a-cacoshl.o
+libm_a-ef_j1.o
+libm_a-fminl.o
+libm_a-e_acos.o
+libm_a-sf_isinf.o
+libm_a-csin.o
+libm_a-s_isinf.o
+libm_a-ef_cosh.o
+libm_a-sf_fdim.o
+libm_a-wf_exp2.o
+libm_a-s_fabs.o
+libm_a-s_remquo.o
+libm_a-e_hypot.o
+libm_a-conjf.o
+libm_a-rintl.o
+libm_a-ldexpl.o
+libm_a-math_err.o
+[7m--More--[27mlibm_a-clog.o
+libm_a-ef_rem_pio2.o
+libm_a-s_modf.o
+libm_a-kf_tan.o
+libm_a-sf_fabs.o
+libm_a-sf_copysign.o
+libm_a-sf_scalbln.o
+libm_a-s_signif.o
+libm_a-cabsf.o
+libm_a-w_hypot.o
+libm_a-cacosl.o
+libm_a-s_nan.o
+libm_a-sf_nearbyint.o
+libm_a-nanl.o
+libm_a-sf_ilogb.o
+libm_a-w_pow.o
+libm_a-sf_log2.o
+libm_a-sf_log_data.o
+libm_a-csinhf.o
+libm_a-fegetexcept.o
+libm_a-cacosf.o
+libm_a-wrf_gamma.o
+libm_a-casinh.o
+libm_a-w_atanh.o
+libm_a-ef_log.o
+[7m--More--[27mlibm_a-clogl.o
+libm_a-fmal.o
+libm_a-kf_rem_pio2.o
+libm_a-k_tan.o
+libm_a-logl.o
+libm_a-s_expm1.o
+libm_a-sf_fmin.o
+libm_a-el_hypot.o
+libm_a-sf_isnanf.o
+libm_a-wf_log.o
+libm_a-frexpl.o
+libm_a-cpowl.o
+libm_a-erfl.o
+libm_a-e_rem_pio2.o
+libm_a-cacoshf.o
+libm_a-creal.o
+libm_a-asinl.o
+libm_a-s_signbit.o
+libm_a-wf_acos.o
+libm_a-s_isnand.o
+libm_a-ef_atanh.o
+libm_a-ef_sqrt.o
+libm_a-pow.o
+libm_a-atanl.o
+libm_a-wf_gamma.o
+[7m--More--[27mlibm_a-casin.o
+libm_a-w_fmod.o
+libm_a-cprojl.o
+libm_a-ef_fmod.o
+libm_a-truncl.o
+libm_a-fe_dfl_env.o
+libm_a-k_rem_pio2.o
+libm_a-fmodl.o
+libm_a-w_jn.o
+libm_a-sincosf_data.o
+libm_a-ctanhf.o
+libm_a-feholdexcept.o
+libm_a-sf_ldexp.o
+libm_a-csinl.o
+libm_a-s_llrint.o
+libm_a-w_acos.o
+libm_a-e_cosh.o
+libm_a-tgammal.o
+libm_a-log2_data.o
+libm_a-sf_llrint.o
+libm_a-s_scalbn.o
+libm_a-wf_log2.o
+libm_a-sf_nextafter.o
+libm_a-signgam.o
+libm_a-wf_remainder.o
+[7m--More--[27mlibm_a-sinl.o
+libm_a-casinhl.o
+libm_a-nexttowardf.o
+libm_a-e_sinh.o
+libm_a-clog10f.o
+libm_a-cprojf.o
+libm_a-s_trunc.o
+libm_a-s_logb.o
+libm_a-ef_pow.o
+libm_a-atanhl.o
+libm_a-w_exp2.o
+libm_a-sf_cos.o
+libm_a-sf_scalbn.o
+libm_a-s_fma_arm.o
+libm_a-sf_exp.o
+libm_a-feupdateenv.o
+libm_a-fesetround.o
+libm_a-nextafterl.o
+libm_a-wf_cosh.o
+libm_a-w_gamma.o
+libm_a-cacos.o
+libm_a-cexpl.o
+libm_a-ef_j0.o
+libm_a-remquol.o
+libm_a-k_standard.o
+[7m--More--[27mlibm_a-sf_infinity.o
+libm_a-csinh.o
+libm_a-s_isinfd.o
+libm_a-ef_exp.o
+libm_a-sf_logb.o
+libm_a-sf_tanh.o
+libm_a-floorl.o
+libm_a-s_lround.o
+libm_a-e_j0.o
+libm_a-scalblnl.o
+libm_a-expl.o
+libm_a-clog10.o
+libm_a-exp_data.o
+libm_a-ef_remainder.o
+libm_a-s_copysign.o
+libm_a-ef_acos.o
+libm_a-wf_sqrt.o
+libm_a-w_sqrt.o
+libm_a-tanl.o
+libm_a-ctanl.o
+libm_a-log2l.o
+libm_a-e_scalb.o
+libm_a-lroundl.o
+libm_a-casinhf.o
+libm_a-s_ldexp.o
+[7m--More--[27mlibm_a-ctanh.o
+libm_a-w_j0.o
+libm_a-ccosl.o
+libm_a-s_log1p.o
+libm_a-sf_rint.o
+libm_a-s_round.o
+libm_a-w_log10.o
+libm_a-sf_pow.o
+libm_a-cpowf.o
+libm_a-fesetexceptflag.o
+libm_a-ilogbl.o
+libm_a-csqrtf.o
+libm_a-wf_hypot.o
+libm_a-catan.o
+libm_a-w_cosh.o
+libm_a-csqrtl.o
+libm_a-erf_lgamma.o
+libm_a-acoshl.o
+libm_a-w_tgamma.o
+libm_a-k_sin.o
+libm_a-wf_atan2.o
+libm_a-s_ilogb.o
+libm_a-sf_fmax.o
+libm_a-sf_tan.o
+libm_a-sf_isnan.o
+[7m--More--[27mlibm_a-s_cos.o
+libm_a-wrf_lgamma.o
+libm_a-modfl.o
+libm_a-s_scalbln.o
+libm_a-conjl.o
+libm_a-lgammal.o
+libm_a-e_pow.o
+libm_a-catanf.o
+libm_a-acosl.o
+libm_a-conj.o
+libm_a-exp2.o
+libm_a-wf_acosh.o
+libm_a-ef_acosh.o
+libm_a-sf_frexp.o
+libm_a-pow_log_data.o
+libm_a-e_sqrt.o
+libm_a-math_errf.o
+libm_a-sf_remquo.o
+libm_a-s_frexp.o
+libm_a-ctan.o
+libm_a-s_pow10.o
+libm_a-sf_round.o
+libm_a-hypotl.o
+libm_a-w_j1.o
+libm_a-sincosf.o
+[7m--More--[27mlibm_a-csinf.o
+libm_a-fegetround.o
+libm_a-sf_signif.o
+libm_a-wf_drem.o
+libm_a-cabs.o
+libm_a-s_fmin.o
+libm_a-e_exp.o
+libm_a-llrintl.o
+libm_a-log2.o
+libm_a-sf_lrint.o
+libm_a-s_cbrt.o
+libm_a-wf_tgamma.o
+libm_a-sf_nan.o
+libm_a-s_asinh.o
+libm_a-wf_pow.o
+libm_a-ceill.o
+libm_a-catanhl.o
+libm_a-logbl.o
+libm_a-e_log10.o
+libm_a-e_jn.o
+libm_a-crealf.o
+libm_a-sf_ceil.o
+libm_a-cimagf.o
+libm_a-ef_log10.o
+libm_a-remainderl.o
+[7m--More--[27mlibm_a-s_tanh.o
+libm_a-sf_cbrt.o
+libm_a-sf_asinh.o
+libm_a-s_floor.o
+libm_a-w_sinh.o
+libm_a-sf_exp2.o
+libm_a-cimagl.o
+libm_a-wf_exp.o
+libm_a-wr_gamma.o
+libm_a-cacosh.o
+libm_a-cephes_subrl.o
+libm_a-ef_hypot.o
+libm_a-fdiml.o
+libm_a-powl.o
+libm_a-wr_lgamma.o
+libm_a-cosf.o
+libm_a-catanhf.o
+libm_a-fegetexceptflag.o
+libm_a-log1pl.o
+libm_a-s_llround.o
+libm_a-e_j1.o
+libm_a-exp2l.o
+libm_a-sinhl.o
+libm_a-log_data.o
+libm_a-cexp.o
+[7m--More--[27mlibm_a-ef_scalb.o
+libm_a-sf_llround.o
+libm_a-kf_cos.o
+libm_a-wf_sinh.o
+libm_a-w_sincos.o
+libm_a-tanhl.o
+libm_a-ctanhl.o
+libm_a-nexttowardl.o
+libm_a-e_remainder.o
+libm_a-roundl.o
+libm_a-ccoshf.o
+libm_a-sf_floor.o
+libm_a-ccosf.o
+libm_a-wf_jn.o
+libm_a-ccosh.o
+libm_a-s_fdim.o
+libm_a-e_atan2.o
+libm_a-s_tan.o
+libm_a-s_rint.o
+libm_a-w_log.o
+libm_a-sf_pow_log2_data.o
+libm_a-cexpf.o
+libm_a-fesetenv.o
+libm_a-asinhl.o
+libm_a-wf_j0.o
+[7m--More--[27mlibm_a-catanh.o
+libm_a-s_fmax.o
+libm_a-w_asin.o
+libm_a-ef_jn.o
+libm_a-ccoshl.o
+libm_a-fmaxl.o
+libm_a-e_acosh.o
+libm_a-wf_atanh.o
+libm_a-s_infinity.o
+libm_a-sf_fma.o
+libm_a-sf_sin.o
+libm_a-sf_isinff.o
+libm_a-s_erf.o
+libm_a-e_tgamma.o
+libm_a-cephes_subrf.o
+libm_a-scalbnl.o
+libm_a-cpow.o
+libm_a-expm1l.o
+libm_a-exp.o
+libm_a-wf_asin.o
+libm_a-ef_asin.o
+libm_a-sf_erf.o
+libm_a-sf_finite.o
+libm_a-csqrt.o
+libm_a-s_nextafter.o
+[7m--More--[27mlibm_a-sf_trunc.o
+libm_a-copysignl.o
+libm_a-sf_expm1.o
+libm_a-w_remainder.o
+libm_a-sf_log2_data.o
+libm_a-sf_log.o
+libm_a-cabsl.o
+libm_a-feraiseexcept.o
+libm_a-wf_sincos.o
+libm_a-s_fpclassify.o
+libm_a-sl_finite.o
+libm_a-e_fmod.o
+libm_a-lrintl.o
+libm_a-log10l.o
+libm_a-s_exp10.o
+libm_a-sf_fpclassify.o
+libm_a-s_finite.o
+libm_a-sf_log1p.o
+libm_a-s_atan.o
+libm_a-wf_log10.o
+libm_a-fabsl.o
+libm_a-casinl.o
+libm_a-erfcl.o
+libm_a-e_log.o
+libm_a-er_lgamma.o
+[7m--More--[27mlibm_a-ctanf.o
+]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$  [K]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$  [K]0;student@ubuntu: ~/ESP/newlib-arm-none-eabi[01;32mstudent@ubuntu[00m:[01;34m~/ESP/newlib-arm-none-eabi[00m$  cd ..
+]0;student@ubuntu: ~/ESP[01;32mstudent@ubuntu[00m:[01;34m~/ESP[00m$ cd ..
+]0;student@ubuntu: ~[01;32mstudent@ubuntu[00m:[01;34m~[00m$ cd esp-lab-[K-4.2
+]0;student@ubuntu: ~/esp-lab-4.2[01;32mstudent@ubuntu[00m:[01;34m~/esp-lab-4.2[00m$ cd Lab4.2
+]0;student@ubuntu: ~/esp-lab-4.2/Lab4.2[01;32mstudent@ubuntu[00m:[01;34m~/esp-lab-4.2/Lab4.2[00m$ [K]0;student@ubuntu: ~/esp-lab-4.2/Lab4.2[01;32mstudent@ubuntu[00m:[01;34m~/esp-lab-4.2/Lab4.2[00m$ [K]0;student@ubuntu: ~/esp-lab-4.2/Lab4.2[01;32mstudent@ubuntu[00m:[01;34m~/esp-lab-4.2/Lab4.2[00m$ make
+make: 'demo.elf' is up to date.
+]0;student@ubuntu: ~/esp-lab-4.2/Lab4.2[01;32mstudent@ubuntu[00m:[01;34m~/esp-lab-4.2/Lab4.2[00m$ openocd -f openocd.cfg
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "hla_swd". To override use 'transport select <transport>'.
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 500 kHz
+adapter_nsrst_delay: 100
+none separate
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : clock speed 480 kHz
+Info : STLINK v2 JTAG v37 API v2 SWIM v27 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.208883
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : accepting 'telnet' connection on tcp/4444
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+adapter speed: 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800019a msp: 0x20018000
+auto erase enabled
+Info : device id = 0x10076415
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+Warn : block write succeeded
+wrote 79872 bytes from file demo.elf in 4.069504s (19.167 KiB/s)
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+adapter speed: 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+adapter speed: 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080001d2 msp: 0x20018000
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+adapter speed: 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080001d2 msp: 0x20018000
+auto erase enabled
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+Warn : block write succeeded
+wrote 55296 bytes from file demo.elf in 3.053503s (17.685 KiB/s)
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+adapter speed: 480 kHz
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 100ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 700ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 1500ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 3100ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32l4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 6300ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status co
